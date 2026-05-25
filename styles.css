@@ -1812,14 +1812,17 @@ body.nav-open { overflow: hidden; }
     max-width: 420px;
   }
   .approach-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 3rem;
   }
   .approach-image {
     position: relative;
     top: 0;
     max-width: 420px;
+    min-width: 0;
+    width: 100%;
   }
+  .approach-main { min-width: 0; width: 100%; }
   .approach-image-frame {
     aspect-ratio: 4 / 3;
   }

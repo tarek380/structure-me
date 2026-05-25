@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# No-index areas
+Disallow: /thank-you
+Disallow: /thank-you-subscribe
+Disallow: /subscribe-details
+
+Sitemap: https://www.structureme.com.au/sitemap.xml

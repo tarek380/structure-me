@@ -55,7 +55,13 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
+/* Guard against any descendant forcing horizontal scroll */
+img, video, svg, iframe, table { max-width: 100%; height: auto; }
+img, video { display: block; }
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -2356,6 +2362,13 @@ body.nav-open { overflow: hidden; }
 }
 .svc-related-inner { max-width: var(--container); margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 5rem); }
 .svc-related-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+.svc-related-grid--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1024px) {
+  .svc-related-grid--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .svc-related-grid--5 { grid-template-columns: 1fr; }
+}
 .svc-related-card {
   position: relative;
   display: block;

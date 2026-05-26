@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>Insights | Structure Me · Writing on structure, capital, family office and exit</title>
+    <meta
+      name="description"
+      content="Editorial writing from Structure Me on corporate structures, capital strategy, international holdings, family-office architecture and business exit-readiness. Filter by discipline."
+    />
+    <meta name="keywords" content="Structure Me insights, business advisory articles, business structuring guides, capital raising Australia, family office Australia, business exit strategy guides" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.structureme.com.au/insights" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Structure Me" />
+    <meta property="og:title" content="Insights · Structure Me" />
+    <meta property="og:description" content="Editorial writing on structure, capital, family office and exit." />
+    <meta property="og:image" content="https://www.structureme.com.au/img/insights/hero.jpg" />
+    <meta property="og:url" content="https://www.structureme.com.au/insights" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Insights | Structure Me" />
+    <meta name="twitter:description" content="Editorial writing on structure, capital, family office and exit." />
+    <meta name="twitter:image" content="https://www.structureme.com.au/img/insights/hero.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230a0a0a"/><g fill="none" stroke="%23c8a24a" stroke-width="2" stroke-linecap="square"><path d="M8 8h12M8 16h12M8 24h12"/><path d="M22 8v16"/></g></svg>'
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.structureme.com.au/#organization",
+            "name": "Structure Me",
+            "url": "https://www.structureme.com.au/",
+            "email": "tarek@structureme.com.au",
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "AU",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.structureme.com.au/insights#collection",
+            "url": "https://www.structureme.com.au/insights",
+            "name": "Insights | Structure Me",
+            "isPartOf": { "@id": "https://www.structureme.com.au/#organization" },
+            "inLanguage": "en-AU",
+            "description": "Editorial writing from Structure Me on structure, capital, family office and exit."
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://www.structureme.com.au/insights#blog",
+            "name": "Structure Me Insights",
+            "publisher": { "@id": "https://www.structureme.com.au/#organization" },
+            "blogPost": [
+              {
+                "@type": "BlogPosting",
+                "headline": "Trusts, companies and hybrids: choosing the structure your business will sell from",
+                "url": "https://www.structureme.com.au/insights/trusts-companies-hybrids-business-structure",
+                "datePublished": "2026-05-12",
+                "author": { "@id": "https://www.structureme.com.au/#organization" },
+                "image": "https://www.structureme.com.au/img/insights/6-featured.jpg"
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.structureme.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://www.structureme.com.au/insights" }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="page-service" id="top">
+    <!-- NAV -->
+    <header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Structure Me — Home">
+          <svg class="nav-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" /><path d="M3 14 L18 14" /><path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" /><path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" /><path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" /><path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navOverlay" aria-expanded="false" type="button">
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- FULLSCREEN MENU OVERLAY -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="international.html" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="family-office.html" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="#top" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="breadcrumbs-inner">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li aria-current="page">Insights</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- FILTERS (sticky) — now above the featured hero -->
+    <div class="insights-filters-wrap" id="articles">
+      <div class="insights-filters-inner">
+        <span class="insights-filters-label">Filter by discipline</span>
+        <div class="insights-filters" role="tablist" aria-label="Filter insights by service">
+          <button class="insights-filter is-active" data-filter="all" type="button" role="tab" aria-selected="true">All</button>
+          <button class="insights-filter" data-filter="advisory" type="button" role="tab" aria-selected="false">Advisory</button>
+          <button class="insights-filter" data-filter="structuring" type="button" role="tab" aria-selected="false">Structuring</button>
+          <button class="insights-filter" data-filter="international" type="button" role="tab" aria-selected="false">International</button>
+          <button class="insights-filter" data-filter="family-office" type="button" role="tab" aria-selected="false">Family Office</button>
+          <button class="insights-filter" data-filter="exit" type="button" role="tab" aria-selected="false">Exit</button>
+        </div>
+        <span class="insights-count" id="insightsCount">7 pieces</span>
+      </div>
+    </div>
+
+    <!-- FEATURED — now functions as the page hero -->
+    <section class="insights-featured insights-featured--hero" aria-labelledby="insights-h1">
+      <div class="insights-featured-inner">
+        <h1 id="insights-h1" class="visually-hidden">Insights — Featured article</h1>
+        <a class="insights-featured-card" id="featuredCard" href="insights/trusts-companies-hybrids-business-structure.html" data-card data-category="structuring" data-date="2026-05-12" data-image="img/insights/6-featured.jpg">
+          <div class="insights-featured-content">
+            <span class="insights-featured-flag">— Featured · Structuring</span>
+            <h2 class="insights-featured-title">
+              Trusts, companies and hybrids: choosing the <em>structure</em> your business will sell from.
+            </h2>
+            <p class="insights-featured-dek">
+              A working paper on the three corporate architectures most Australian
+              founders end up choosing between — and why the choice you make at
+              year one quietly decides the price you achieve at year ten.
+            </p>
+            <div class="insights-featured-meta">
+              <span>12 May 2026</span>
+              <span class="insights-featured-meta-sep" aria-hidden="true"></span>
+              <span>14 min read</span>
+              <span class="insights-featured-meta-sep" aria-hidden="true"></span>
+              <span>Read piece →</span>
+            </div>
+          </div>
+          <div class="insights-featured-image" style="background-image: url('img/insights/6-featured.jpg');" aria-hidden="true"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ARTICLE GRID -->
+    <section class="insights-list">
+      <div class="insights-list-inner">
+        <div class="insights-grid" id="insightsGrid">
+
+          <a class="insights-card" data-card data-category="advisory" data-date="2026-04-28" data-image="img/insights/1-advisory.jpg" href="#">
+            <div class="insights-card-image" style="background-image: url('img/insights/1-advisory.jpg');" aria-hidden="true"></div>
+            <div class="insights-card-flag">— Advisory</div>
+            <h3 class="insights-card-title">The brief most founders should write before hiring an adviser.</h3>
+            <p class="insights-card-dek">A short, deliberate document that saves a year of expensive misalignment — and how we recommend writing it.</p>
+            <div class="insights-card-meta">28 Apr 2026 · 6 min</div>
+          </a>
+
+          <a class="insights-card" data-card data-category="structuring" data-date="2026-05-12" data-image="img/insights/2-structuring.jpg" href="insights/trusts-companies-hybrids-business-structure.html">
+            <div class="insights-card-image" style="background-image: url('img/insights/2-structuring.jpg');" aria-hidden="true"></div>
+            <div class="insights-card-flag">— Structuring</div>
+            <h3 class="insights-card-title">Trusts, companies and hybrids — the decision tree we walk clients through.</h3>
+            <p class="insights-card-dek">A working paper on the three architectures Australian founders end up choosing between, and what each one quietly costs.</p>
+            <div class="insights-card-meta">12 May 2026 · 14 min</div>
+          </a>
+
+          <a class="insights-card" data-card data-category="international" data-date="2026-04-19" data-image="img/insights/3-international.jpg" href="#">
+            <div class="insights-card-image" style="background-image: url('img/insights/3-international.jpg');" aria-hidden="true"></div>
+            <div class="insights-card-flag">— International</div>
+            <h3 class="insights-card-title">Holding companies, Singapore and the quiet rise of Asia-Pacific capital.</h3>
+            <p class="insights-card-dek">Why an Australian operating business with growth capital from the region is often a different legal entity than the one it started as.</p>
+            <div class="insights-card-meta">19 Apr 2026 · 9 min</div>
+          </a>
+
+          <a class="insights-card" data-card data-category="family-office" data-date="2026-04-02" data-image="img/insights/4-family-office.jpg" href="#">
+            <div class="insights-card-image" style="background-image: url('img/insights/4-family-office.jpg');" aria-hidden="true"></div>
+            <div class="insights-card-flag">— Family Office</div>
+            <h3 class="insights-card-title">What a family-office structure actually looks like at $50m, $100m and $250m.</h3>
+            <p class="insights-card-dek">Architecture by asset weight. Three sample diagrams and the reasoning behind each. Suitable as a primer for first-generation principals.</p>
+            <div class="insights-card-meta">02 Apr 2026 · 11 min</div>
+          </a>
+
+          <a class="insights-card" data-card data-category="exit" data-date="2026-03-18" data-image="img/insights/5-exit.jpg" href="#">
+            <div class="insights-card-image" style="background-image: url('img/insights/5-exit.jpg');" aria-hidden="true"></div>
+            <div class="insights-card-flag">— Exit</div>
+            <h3 class="insights-card-title">The five-year exit calendar: what to start doing the moment you decide to sell.</h3>
+            <p class="insights-card-dek">A month-by-month framework — covenants, normalisations, key-person risk, and the cleaning up that buyers will price you on.</p>
+            <div class="insights-card-meta">18 Mar 2026 · 13 min</div>
+          </a>
+
+          <a class="insights-card" data-card data-category="advisory" data-date="2026-03-04" data-image="img/insights/1-advisory.jpg" href="#">
+            <div class="insights-card-image" style="background-image: url('img/insights/1-advisory.jpg');" aria-hidden="true"></div>
+            <div class="insights-card-flag">— Advisory</div>
+            <h3 class="insights-card-title">Why most private businesses pay too much for the wrong kind of capital.</h3>
+            <p class="insights-card-dek">A short note on the difference between expensive money and patient money — and the cost of confusing the two.</p>
+            <div class="insights-card-meta">04 Mar 2026 · 7 min</div>
+          </a>
+
+        </div>
+
+        <p class="insights-empty" id="insightsEmpty">No pieces in this discipline yet — check back soon, or browse all.</p>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER BAND -->
+    <section class="insights-newsletter" id="newsletter" aria-labelledby="newsletter-h">
+      <div class="insights-newsletter-inner">
+        <span class="section-eyebrow">— Quiet quarterly note</span>
+        <h2 id="newsletter-h" class="insights-newsletter-title">
+          One piece, every quarter,<br />on the work that <em>compounds</em>.
+        </h2>
+        <p class="insights-newsletter-lede">
+          A short editorial dispatch to a handful of founders and family offices.
+          No promotion. No noise. Just the writing we would send to friends.
+        </p>
+        <form class="insights-newsletter-form" id="newsletterForm" action="subscribe-details.html" method="GET" novalidate>
+          <input class="insights-newsletter-input" type="email" name="email" placeholder="you@yourbusiness.com" aria-label="Email address" required />
+          <button class="insights-newsletter-btn" type="submit">Subscribe</button>
+        </form>
+        <script>
+          (function(){
+            var f = document.getElementById('newsletterForm');
+            if(!f) return;
+            f.addEventListener('submit', function(e){
+              e.preventDefault();
+              if(!f.checkValidity()){ f.reportValidity(); return; }
+              var email = f.querySelector('input[name="email"]').value.trim();
+              window.location.href = 'subscribe-details.html?email=' + encodeURIComponent(email);
+            });
+          })();
+        </script>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" /><path d="M3 14 L18 14" /><path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" /><path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" /><path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" /><path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="advisory.html">Business advisory</a>
+            <a href="business-structuring.html">Business structuring</a>
+            <a href="international.html">International business structuring</a>
+            <a href="family-office.html">Family office structuring</a>
+            <a href="exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="about.html">About</a>
+            <a href="about.html#team">The team</a>
+            <a href="insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script>
+      // Menu overlay
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () {
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          toggle.classList.add('is-active');
+          toggle.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('nav-open');
+        };
+        var close = function () {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          toggle.classList.remove('is-active');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        };
+        toggle.addEventListener('click', function () {
+          if (overlay.classList.contains('is-open')) close(); else open();
+        });
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function () { setTimeout(close, 60); });
+        }
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+        });
+      })();
+
+      // Insights filter + dynamic hero
+      (function () {
+        var filters = document.querySelectorAll('.insights-filter');
+        var gridCards = document.querySelectorAll('.insights-grid [data-card]');
+        var empty = document.getElementById('insightsEmpty');
+        var count = document.getElementById('insightsCount');
+        var featured = document.getElementById('featuredCard');
+
+        // Snapshot the original featured-card content so we can restore it on "All".
+        var originalFeatured = featured ? {
+          href: featured.getAttribute('href'),
+          category: featured.getAttribute('data-category'),
+          date: featured.getAttribute('data-date'),
+          image: featured.getAttribute('data-image'),
+          flag: featured.querySelector('.insights-featured-flag').innerHTML,
+          title: featured.querySelector('.insights-featured-title').innerHTML,
+          dek: featured.querySelector('.insights-featured-dek').innerHTML,
+          metaHTML: featured.querySelector('.insights-featured-meta').innerHTML
+        } : null;
+
+        var labels = {
+          advisory: 'Advisory',
+          structuring: 'Structuring',
+          international: 'International',
+          'family-office': 'Family Office',
+          exit: 'Exit'
+        };
+
+        function fmtDate(iso) {
+          var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+          var parts = iso.split('-');
+          if (parts.length !== 3) return iso;
+          var d = parseInt(parts[2], 10);
+          var m = months[parseInt(parts[1], 10) - 1] || '';
+          return d + ' ' + m + ' ' + parts[0];
+        }
+
+        function pickLatest(filter) {
+          var pool = [];
+          gridCards.forEach(function (c) {
+            if (filter === 'all' || c.getAttribute('data-category') === filter) pool.push(c);
+          });
+          pool.sort(function (a, b) {
+            return (b.getAttribute('data-date') || '').localeCompare(a.getAttribute('data-date') || '');
+          });
+          return pool[0] || null;
+        }
+
+        function setFeaturedFromCard(card, filter) {
+          if (!featured || !card) return;
+          var cat = card.getAttribute('data-category');
+          var date = card.getAttribute('data-date') || '';
+          var img = card.getAttribute('data-image') || '';
+          var titleEl = card.querySelector('.insights-card-title');
+          var dekEl = card.querySelector('.insights-card-dek');
+          var metaEl = card.querySelector('.insights-card-meta');
+          var meta = metaEl ? metaEl.textContent : '';
+          // Extract minutes (e.g. "6 min") from the meta text.
+          var minMatch = meta.match(/(\d+\s*min)/i);
+          var minRead = minMatch ? minMatch[1] : '';
+          var flagLabel = filter === 'all' ? (labels[cat] || 'Featured') : (labels[filter] || 'Featured');
+
+          featured.setAttribute('href', card.getAttribute('href') || '#');
+          featured.setAttribute('data-category', cat || '');
+          featured.setAttribute('data-date', date);
+          featured.setAttribute('data-image', img);
+          featured.querySelector('.insights-featured-flag').textContent = '— ' + (filter === 'all' ? 'Featured' : 'Latest') + ' · ' + flagLabel;
+          featured.querySelector('.insights-featured-title').innerHTML = titleEl ? titleEl.innerHTML : '';
+          featured.querySelector('.insights-featured-dek').innerHTML = dekEl ? dekEl.innerHTML : '';
+          featured.querySelector('.insights-featured-meta').innerHTML =
+            '<span>' + fmtDate(date) + '</span>' +
+            '<span class="insights-featured-meta-sep" aria-hidden="true"></span>' +
+            (minRead ? '<span>' + minRead + ' read</span><span class="insights-featured-meta-sep" aria-hidden="true"></span>' : '') +
+            '<span>Read piece →</span>';
+          var imgEl = featured.querySelector('.insights-featured-image');
+          if (imgEl && img) imgEl.style.backgroundImage = "url('" + img + "')";
+        }
+
+        function restoreFeatured() {
+          if (!featured || !originalFeatured) return;
+          featured.setAttribute('href', originalFeatured.href);
+          featured.setAttribute('data-category', originalFeatured.category);
+          featured.setAttribute('data-date', originalFeatured.date);
+          featured.setAttribute('data-image', originalFeatured.image);
+          featured.querySelector('.insights-featured-flag').innerHTML = originalFeatured.flag;
+          featured.querySelector('.insights-featured-title').innerHTML = originalFeatured.title;
+          featured.querySelector('.insights-featured-dek').innerHTML = originalFeatured.dek;
+          featured.querySelector('.insights-featured-meta').innerHTML = originalFeatured.metaHTML;
+          var imgEl = featured.querySelector('.insights-featured-image');
+          if (imgEl) imgEl.style.backgroundImage = "url('" + originalFeatured.image + "')";
+        }
+
+        function apply(filter) {
+          var visible = 0;
+          gridCards.forEach(function (card) {
+            var cat = card.getAttribute('data-category');
+            var match = filter === 'all' || cat === filter;
+            if (match) {
+              card.classList.remove('is-hidden');
+              visible++;
+            } else {
+              card.classList.add('is-hidden');
+            }
+          });
+          if (empty) empty.classList.toggle('is-visible', visible === 0);
+          if (count) count.textContent = visible + (visible === 1 ? ' piece' : ' pieces');
+
+          // Swap the hero: restore default on "all", else latest article in category.
+          if (filter === 'all') {
+            restoreFeatured();
+          } else {
+            var latest = pickLatest(filter);
+            if (latest) setFeaturedFromCard(latest, filter);
+            else restoreFeatured();
+          }
+        }
+
+        filters.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            filters.forEach(function (b) {
+              b.classList.remove('is-active');
+              b.setAttribute('aria-selected', 'false');
+            });
+            btn.classList.add('is-active');
+            btn.setAttribute('aria-selected', 'true');
+            apply(btn.getAttribute('data-filter'));
+          });
+        });
+      })();
+    </script>
+    <aside class="sub-widget" id="subWidget" role="complementary" aria-label="Subscribe to Structure Me Insights" aria-hidden="true">
+      <button type="button" class="sub-widget-close" id="subWidgetClose" aria-label="Dismiss subscribe panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 5 L19 19 M19 5 L5 19"/></svg>
+      </button>
+      <div class="sub-widget-inner">
+        <div class="sub-widget-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6 L21 6 L21 19 L3 19 Z"/><path d="M3 6 L12 14 L21 6"/></svg>
+        </div>
+        <span class="sub-widget-eyebrow">— Structure Me Insights</span>
+        <h3 class="sub-widget-title">Read the next <em>essay</em> in your inbox.</h3>
+        <p class="sub-widget-copy">Slow, considered pieces on entities, jurisdictions and succession — roughly monthly.</p>
+        <form class="sub-widget-form" id="subWidgetForm" novalidate>
+          <input type="text" name="name" class="sub-widget-input" placeholder="Name" autocomplete="name" required>
+          <input type="email" name="email" class="sub-widget-input" placeholder="Email" autocomplete="email" required>
+          <button type="submit" class="sub-widget-submit">
+            <span>Subscribe</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="sub-widget-consent">No spam. One-click unsubscribe.</p>
+        </form>
+      </div>
+    </aside>
+
+    <script>
+      (function () {
+        var w = document.getElementById('subWidget');
+        var closeBtn = document.getElementById('subWidgetClose');
+        var form = document.getElementById('subWidgetForm');
+        if (!w || !form) return;
+
+        var STORAGE_KEY = 'sm_subscribe_dismissed';
+        if (sessionStorage.getItem(STORAGE_KEY) === '1') return;
+
+        var shown = false;
+        function show() {
+          if (shown) return;
+          shown = true;
+          w.classList.add('is-open');
+          w.setAttribute('aria-hidden', 'false');
+        }
+        function dismiss() {
+          w.classList.remove('is-open');
+          w.classList.add('is-hidden');
+          w.setAttribute('aria-hidden', 'true');
+          try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+        }
+        // Show shortly after page load on every visit (unless dismissed this session)
+        setTimeout(show, 800);
+
+        closeBtn.addEventListener('click', dismiss);
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (!form.checkValidity()) { form.reportValidity(); return; }
+          var fd = new FormData(form);
+          var name = (fd.get('name') || '').toString().trim();
+          var email = (fd.get('email') || '').toString().trim();
+          try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+          // Forward to the details page where we collect first/last name, country, and persist.
+          var qs = 'email=' + encodeURIComponent(email);
+          if (name) qs += '&name=' + encodeURIComponent(name);
+          window.location.href = 'subscribe-details.html?' + qs;
+        });
+      })();
+    </script>
+  </body>
+</html>

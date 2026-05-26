@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>Contact | Structure Me · Begin a conversation</title>
+    <meta
+      name="description"
+      content="Speak with Structure Me. A small private advisory team in Melbourne, working alongside Australian founders and family offices on corporate structures, capital and exit. Tell us what you're working on."
+    />
+    <meta name="keywords" content="contact Structure Me, business advisory Melbourne, family office advisory contact, business structuring enquiry, capital advisory Australia, exit strategy enquiry" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.structureme.com.au/contact" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Structure Me" />
+    <meta property="og:title" content="Contact · Structure Me — Begin a conversation" />
+    <meta property="og:description" content="A small private advisory team in Melbourne. Tell us what you're working on." />
+    <meta property="og:image" content="https://www.structureme.com.au/img/contact-image.jpg" />
+    <meta property="og:url" content="https://www.structureme.com.au/contact" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact | Structure Me" />
+    <meta name="twitter:description" content="Begin a conversation with Structure Me." />
+    <meta name="twitter:image" content="https://www.structureme.com.au/img/contact-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230a0a0a"/><g fill="none" stroke="%23c8a24a" stroke-width="2" stroke-linecap="square"><path d="M8 8h12M8 16h12M8 24h12"/><path d="M22 8v16"/></g></svg>'
+    />
+
+    <!-- =========================================================
+         STRUCTURED DATA — Organization + ContactPage + Breadcrumb
+         ========================================================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.structureme.com.au/#organization",
+            "name": "Structure Me",
+            "url": "https://www.structureme.com.au/",
+            "email": "tarek@structureme.com.au",
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "contactType": "advisory enquiry",
+              "email": "tarek@structureme.com.au",
+              "areaServed": ["AU","Asia-Pacific","International"],
+              "availableLanguage": ["English"]
+            }],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "AU",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC"
+            }
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://www.structureme.com.au/contact#contactpage",
+            "url": "https://www.structureme.com.au/contact",
+            "name": "Contact | Structure Me",
+            "description": "Get in touch with Structure Me. A small private advisory team working alongside Australian founders and family offices on corporate structures, capital and exit-readiness.",
+            "inLanguage": "en-AU",
+            "isPartOf": { "@id": "https://www.structureme.com.au/#organization" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.structureme.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.structureme.com.au/contact" }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="page-service page-contact" id="top">
+    <!-- ================================================================
+         NAV
+         ================================================================ -->
+    <header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Structure Me — Home">
+          <svg class="nav-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="#form" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navOverlay" aria-expanded="false" type="button">
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================================
+         FULLSCREEN MENU OVERLAY
+         ================================================================ -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="international.html" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="family-office.html" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="insights.html" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         BREADCRUMBS
+         ================================================================ -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="breadcrumbs-inner">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
+    <section class="contact-hero" aria-labelledby="contact-h1">
+      <div class="contact-hero-inner">
+        <div class="contact-hero-content">
+          <span class="section-eyebrow">— Contact · Structure Me</span>
+          <h1 id="contact-h1" class="contact-hero-title">
+            Begin a <em>conversation</em>.
+          </h1>
+          <p class="contact-hero-lede">
+            We work with a small number of founders, private boards and family
+            offices at any one time. The conversations that lead somewhere usually
+            start the same way — a few sentences on what you're building, where
+            you've got to, and what you'd like to be true about it in five years.
+            Tell us the shape of it below and we'll respond personally.
+          </p>
+
+          <ul class="contact-hero-meta" role="list">
+            <li>
+              <span class="contact-meta-label">Headquarters</span>
+              <span class="contact-meta-value">Melbourne, Australia</span>
+            </li>
+            <li>
+              <span class="contact-meta-label">Email</span>
+              <a class="contact-meta-value contact-meta-link" href="mailto:tarek@structureme.com.au">tarek@structureme.com.au</a>
+            </li>
+            <li>
+              <span class="contact-meta-label">Direct mobile to our principal</span>
+              <a class="contact-meta-value contact-meta-link" href="tel:+61477363612">0477 363 612</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FORM
+         ================================================================ -->
+    <section class="contact-form-section" id="form" aria-labelledby="form-h">
+      <div class="contact-form-inner">
+
+        <aside class="contact-form-aside" aria-hidden="true">
+          <span class="section-eyebrow">— Enquiry</span>
+          <h2 class="contact-form-aside-title">Tell us what you're <em>working on</em>.</h2>
+          <p class="contact-form-aside-copy">
+            The more concrete the situation, the more useful the first reply.
+            Headline numbers, ownership, where you'd like to be in three to five
+            years — anything that helps us understand the brief.
+          </p>
+        </aside>
+
+        <form class="contact-form" id="contactForm" novalidate
+              data-endpoint=""
+              method="POST">
+          <h2 id="form-h" class="visually-hidden">Contact form</h2>
+
+          <!-- Honeypot (kept invisible) -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="contact-form-honeypot" aria-hidden="true" />
+
+          <div class="contact-form-row contact-form-row--2">
+            <div class="contact-field">
+              <label for="firstName" class="contact-label">First name <span class="contact-req" aria-hidden="true">*</span></label>
+              <input id="firstName" name="firstName" type="text" autocomplete="given-name" required class="contact-input" placeholder="Eleanor" />
+            </div>
+            <div class="contact-field">
+              <label for="surname" class="contact-label">Surname <span class="contact-req" aria-hidden="true">*</span></label>
+              <input id="surname" name="surname" type="text" autocomplete="family-name" required class="contact-input" placeholder="Whittaker" />
+            </div>
+          </div>
+
+          <div class="contact-form-row contact-form-row--2">
+            <div class="contact-field">
+              <label for="email" class="contact-label">Email <span class="contact-req" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required class="contact-input" placeholder="you@yourcompany.com.au" />
+            </div>
+            <div class="contact-field">
+              <label for="mobile" class="contact-label">Mobile <span class="contact-req" aria-hidden="true">*</span></label>
+              <input id="mobile" name="mobile" type="tel" autocomplete="tel" required class="contact-input" placeholder="+61 4xx xxx xxx" inputmode="tel" />
+            </div>
+          </div>
+
+          <div class="contact-form-row contact-form-row--2">
+            <div class="contact-field">
+              <label for="country" class="contact-label">Country <span class="contact-req" aria-hidden="true">*</span></label>
+              <div class="contact-select-wrap">
+                <select id="country" name="country" required class="contact-select" autocomplete="country-name">
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="Australia">Australia</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Hong Kong SAR">Hong Kong SAR</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="contact-select-caret" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="contact-field">
+              <label for="enquirer" class="contact-label">Enquiring as <span class="contact-req" aria-hidden="true">*</span></label>
+              <div class="contact-select-wrap">
+                <select id="enquirer" name="enquirer" required class="contact-select">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="Business">Business</option>
+                  <option value="Family Office">Family Office</option>
+                </select>
+                <span class="contact-select-caret" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-row contact-form-row--2">
+            <div class="contact-field">
+              <label for="service" class="contact-label">Enquiring about <span class="contact-req" aria-hidden="true">*</span></label>
+              <div class="contact-select-wrap">
+                <select id="service" name="service" required class="contact-select">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Business Advisory">Business Advisory</option>
+                  <option value="Business Structuring">Business Structuring</option>
+                  <option value="International Business Structuring">International Business Structuring</option>
+                  <option value="Family Office Structuring">Family Office Structuring</option>
+                  <option value="Business Exit Strategy">Business Exit Strategy</option>
+                  <option value="General enquiry">General enquiry</option>
+                </select>
+                <span class="contact-select-caret" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="contact-field contact-field--revenue" id="revenueField" hidden>
+              <label for="revenue" class="contact-label">Annual revenue <span class="contact-req" aria-hidden="true">*</span></label>
+              <div class="contact-select-wrap">
+                <select id="revenue" name="revenue" class="contact-select" disabled>
+                  <option value="" disabled selected>Select a band</option>
+                  <option value="Under $10M">Under $10M</option>
+                  <option value="$10M to $50M">$10M to $50M</option>
+                  <option value="$50M to $100M">$50M to $100M</option>
+                  <option value="$100M to $1Bn">$100M to $1Bn</option>
+                  <option value="$1Bn plus">$1Bn plus</option>
+                </select>
+                <span class="contact-select-caret" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-row">
+            <div class="contact-field">
+              <label for="message" class="contact-label">Tell us about your situation <span class="contact-req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="7" required class="contact-textarea" placeholder="A few sentences on what you're building, where you've got to, and what you'd like to be true about it in five years."></textarea>
+            </div>
+          </div>
+
+
+          <div class="contact-form-actions">
+            <button type="submit" class="btn btn-primary contact-submit">
+              <span>Send enquiry</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </button>
+            <p class="contact-form-tagline">
+              Or write directly to
+              <a href="mailto:tarek@structureme.com.au">tarek@structureme.com.au</a>
+            </p>
+          </div>
+
+          <div class="contact-form-status" id="contactStatus" role="status" aria-live="polite"></div>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FOOTER
+         ================================================================ -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="advisory.html">Business advisory</a>
+            <a href="business-structuring.html">Business structuring</a>
+            <a href="international.html">International business structuring</a>
+            <a href="family-office.html">Family office structuring</a>
+            <a href="exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="about.html">About</a>
+            <a href="about.html#team">The team</a>
+            <a href="insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script>
+      // Fullscreen menu overlay
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () {
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          toggle.classList.add('is-active');
+          toggle.setAttribute('aria-label', 'Close menu');
+          toggle.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('nav-open');
+        };
+        var close = function () {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          toggle.classList.remove('is-active');
+          toggle.setAttribute('aria-label', 'Open menu');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        };
+        toggle.addEventListener('click', function () {
+          if (overlay.classList.contains('is-open')) close();
+          else open();
+        });
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function () {
+            setTimeout(close, 60);
+          });
+        }
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+        });
+      })();
+
+      // Reveal Revenue field only when "Business" is selected
+      (function () {
+        var enquirer = document.getElementById('enquirer');
+        var rField = document.getElementById('revenueField');
+        var rSelect = document.getElementById('revenue');
+        if (!enquirer || !rField || !rSelect) return;
+        function sync() {
+          var show = enquirer.value === 'Business';
+          rField.hidden = !show;
+          rSelect.disabled = !show;
+          rSelect.required = show;
+          if (!show) rSelect.value = '';
+        }
+        enquirer.addEventListener('change', sync);
+        sync();
+      })();
+
+      // Contact form — graceful submit
+      // NOTE: Replace the form `action` URL above with a real endpoint
+      // (e.g. Formspree, Getform, Basin, Firebase function, or your own
+      // backend). Until then the script below falls back to a mailto:
+      // handoff so no enquiry is ever lost during development.
+      (function () {
+        var form = document.getElementById('contactForm');
+        var status = document.getElementById('contactStatus');
+        if (!form) return;
+
+        function showStatus(msg, kind) {
+          if (!status) return;
+          status.textContent = msg;
+          status.className = 'contact-form-status is-' + (kind || 'info');
+        }
+
+        form.addEventListener('submit', function (e) {
+          // ALWAYS prevent the native submission — we control the flow from here.
+          e.preventDefault();
+
+          // Honeypot check — silently drop bots.
+          var hp = form.querySelector('input[name="_gotcha"]');
+          if (hp && hp.value) { return; }
+
+          // Native validation first.
+          if (!form.checkValidity()) {
+            showStatus('Please complete the required fields highlighted above.', 'error');
+            form.reportValidity();
+            return;
+          }
+
+          var endpoint = form.getAttribute('data-endpoint') || '';
+          var hasEndpoint = endpoint && endpoint.indexOf('your-id-here') === -1 && /^https?:\/\//.test(endpoint);
+
+          if (!hasEndpoint) {
+            // Mailto fallback so the enquiry never goes missing.
+            var fd = new FormData(form);
+            var body = '';
+            var pretty = {
+              firstName: 'First name',
+              surname: 'Surname',
+              email: 'Email',
+              mobile: 'Mobile',
+              country: 'Country',
+              enquirer: 'Enquiring as',
+              service: 'Enquiring about',
+              revenue: 'Annual revenue',
+              message: 'Message'
+            };
+            Object.keys(pretty).forEach(function (k) {
+              var v = fd.get(k) || '';
+              body += pretty[k] + ':\n' + v + '\n\n';
+            });
+            var subject = 'Structure Me enquiry — ' + (fd.get('service') || 'General') +
+                          ' — ' + (fd.get('firstName') || '') + ' ' + (fd.get('surname') || '');
+            var href = 'mailto:tarek@structureme.com.au' +
+                       '?subject=' + encodeURIComponent(subject) +
+                       '&body=' + encodeURIComponent(body);
+            // Open the user's mail client in a new tab, then route the page itself to the thank-you screen.
+            try { window.open(href, '_blank'); } catch (err) { window.location.href = href; }
+            showStatus('Opening your email client — redirecting…', 'success');
+            setTimeout(function () { window.location.href = 'thank-you.html'; }, 600);
+            return;
+          }
+
+          // Async submit to the configured endpoint.
+          showStatus('Sending…', 'info');
+          var data = new FormData(form);
+          fetch(endpoint, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          }).then(function (res) {
+            if (res.ok) {
+              form.reset();
+              showStatus('Thank you — redirecting…', 'success');
+              window.location.href = 'thank-you.html';
+            } else {
+              return res.json().then(function (d) {
+                showStatus((d && d.error) || 'Something went wrong. Please email us directly at tarek@structureme.com.au.', 'error');
+              }).catch(function () {
+                showStatus('Something went wrong. Please email us directly at tarek@structureme.com.au.', 'error');
+              });
+            }
+          }).catch(function () {
+            showStatus('Network error. Please email us directly at tarek@structureme.com.au.', 'error');
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

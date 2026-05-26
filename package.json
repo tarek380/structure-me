@@ -5,9 +5,11 @@
   "type": "module",
   "description": "Static site for Structure Me — Insights content sourced from Sanity at build time.",
   "scripts": {
-    "build": "node scripts/build-insights.mjs",
+    "build": "npm run build:insights && npm run build:studio",
     "build:insights": "node scripts/build-insights.mjs",
-    "dev": "node scripts/build-insights.mjs && echo 'Build complete. Open any .html with a static file server.'"
+    "build:studio": "cd studio && npm ci --no-audit --no-fund && npx sanity build ../studio-app --yes && node ../scripts/patch-studio-paths.mjs",
+    "clean:studio": "rm -rf studio-app",
+    "dev": "node scripts/build-insights.mjs"
   },
   "dependencies": {
     "@portabletext/to-html": "^2.0.13",

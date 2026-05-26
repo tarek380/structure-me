@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'Structure Me',
   projectId: 'r3uuoahs',
   dataset: 'production',
+  basePath: '/studio',
   plugins: [structureTool(), visionTool()],
   schema: { types: schemaTypes },
 })

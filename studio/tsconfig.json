@@ -1,16 +1,16 @@
 {
-  "extends": "@sanity/pkg-utils/tsconfig/strict.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "preserve",
     "esModuleInterop": true,
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true,
-    "allowImportingTsExtensions": false,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "noEmit": true
   },
   "include": ["./**/*.ts", "./**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "../studio-app"]
 }

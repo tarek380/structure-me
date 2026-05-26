@@ -1,0 +1,8 @@
+# Studio source — built into /studio-app at build time, not served directly.
+studio/node_modules
+studio/.sanity
+studio/dist
+# Build artifacts not needed in deployment
+node_modules
+scripts
+.git

@@ -6,9 +6,15 @@
   "redirects": [
     { "source": "/home", "destination": "/", "permanent": true }
   ],
+  "rewrites": [
+    { "source": "/studio/static/:path*", "destination": "/studio-app/static/:path*" },
+    { "source": "/studio", "destination": "/studio-app/index.html" },
+    { "source": "/studio/", "destination": "/studio-app/index.html" },
+    { "source": "/studio/:path*", "destination": "/studio-app/index.html" }
+  ],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/((?!studio).*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
@@ -31,6 +37,12 @@
       "source": "/styles.css",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/studio-app/static/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     }
   ]

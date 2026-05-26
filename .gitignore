@@ -5,4 +5,5 @@ node_modules
 studio/node_modules
 studio/dist
 studio/.sanity
+studio-app
 .DS_Store

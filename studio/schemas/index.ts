@@ -11,6 +11,12 @@ import metric from './objects/metric'
 import approachRow from './objects/approachRow'
 import highlightedText from './objects/highlightedText'
 
+// About page schemas
+import aboutPage from './aboutPage'
+import teamMember from './objects/teamMember'
+import numberedListItem from './objects/numberedListItem'
+import relatedServiceCard from './objects/relatedServiceCard'
+
 export const schemaTypes = [
   // Existing
   insightsPost,
@@ -24,4 +30,9 @@ export const schemaTypes = [
   metric,
   approachRow,
   highlightedText,
+  // About page singleton + objects
+  aboutPage,
+  teamMember,
+  numberedListItem,
+  relatedServiceCard,
 ]

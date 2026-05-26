@@ -27,6 +27,17 @@ export default defineConfig({
                   .title('Homepage')
               ),
 
+            // ── About Page singleton ─────────────────────────────────────
+            S.listItem()
+              .title('About Page')
+              .id('aboutPage')
+              .child(
+                S.document()
+                  .schemaType('aboutPage')
+                  .documentId('aboutPage')
+                  .title('About Page')
+              ),
+
             S.divider(),
 
             // ── Insights ────────────────────────────────────────────────

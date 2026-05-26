@@ -8,9 +8,9 @@
   ],
   "rewrites": [
     { "source": "/studio/static/:path*", "destination": "/studio-app/static/:path*" },
-    { "source": "/studio", "destination": "/studio-app/index.html" },
-    { "source": "/studio/", "destination": "/studio-app/index.html" },
-    { "source": "/studio/:path*", "destination": "/studio-app/index.html" }
+    { "source": "/studio/favicon.ico", "destination": "/studio-app/favicon.ico" },
+    { "source": "/studio", "destination": "/studio-app" },
+    { "source": "/studio/:path((?!static).+)", "destination": "/studio-app" }
   ],
   "headers": [
     {

@@ -1,8 +1,10 @@
-# Studio source — built into /studio-app at build time, not served directly.
+# Vercel build needs scripts/ (build-insights.mjs, patch-studio-paths.mjs)
+# and studio/ (Sanity Studio source) — do NOT exclude those.
+# Only exclude artifacts that shouldn't be uploaded with the source.
+node_modules
 studio/node_modules
 studio/.sanity
 studio/dist
-# Build artifacts not needed in deployment
-node_modules
-scripts
+studio-app
 .git
+.DS_Store

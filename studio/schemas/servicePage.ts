@@ -68,6 +68,15 @@ export default defineType({
             'Leave empty for pages where the hero image is set via CSS (advisory).',
         }),
         defineField({
+          name: 'imageAsset',
+          title: 'Hero image (upload)',
+          type: 'image',
+          description:
+            'Optional. Upload here to override the "Hero image path" above. ' +
+            'Sanity-hosted, CDN-delivered.',
+          options: { hotspot: true },
+        }),
+        defineField({
           name: 'caption',
           title: 'Figure caption',
           type: 'string',

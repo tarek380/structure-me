@@ -18,6 +18,15 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'imageAsset',
+      title: 'Image (upload)',
+      type: 'image',
+      description:
+        'Optional. Upload here to override the "Image path" above. ' +
+        'Sanity-hosted, CDN-delivered.',
+      options: { hotspot: true },
+    }),
+    defineField({
       name: 'role',
       title: 'Role',
       type: 'string',

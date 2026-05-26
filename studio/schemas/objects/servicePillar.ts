@@ -103,6 +103,15 @@ export default defineType({
       description: 'Relative path, e.g. "img/advisory-structures.jpg".',
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: 'imageAsset',
+      title: 'Image (upload)',
+      type: 'image',
+      description:
+        'Optional. Upload here to override the "Image path" above. ' +
+        'Sanity-hosted, CDN-delivered.',
+      options: { hotspot: true },
+    }),
   ],
 
   preview: {

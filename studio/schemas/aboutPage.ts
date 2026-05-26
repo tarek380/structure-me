@@ -75,6 +75,15 @@ export default defineType({
           validation: (Rule) => Rule.required(),
         }),
         defineField({
+          name: 'imageAsset',
+          title: 'Hero image (upload)',
+          type: 'image',
+          description:
+            'Optional. Upload here to override the "Hero image path" above. ' +
+            'Sanity-hosted, CDN-delivered.',
+          options: { hotspot: true },
+        }),
+        defineField({
           name: 'caption',
           title: 'Figure caption',
           type: 'string',

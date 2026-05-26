@@ -4,11 +4,11 @@ import { defineType, defineField, defineArrayMember } from 'sanity'
  * servicePage — document type with FIVE instances, one per service page.
  *
  * Document IDs are fixed (pinned via the studio config):
- *   servicePage.advisory
- *   servicePage.business-structuring
- *   servicePage.international
- *   servicePage.family-office
- *   servicePage.exit-strategy
+ *   servicePage-advisory
+ *   servicePage-business-structuring
+ *   servicePage-international
+ *   servicePage-family-office
+ *   servicePage-exit-strategy
  *
  * Each instance renders one of advisory.html / business-structuring.html /
  * international.html / family-office.html / exit-strategy.html.

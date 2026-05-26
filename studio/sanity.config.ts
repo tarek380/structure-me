@@ -48,47 +48,47 @@ export default defineConfig({
                   .items([
                     S.listItem()
                       .title('Business Advisory')
-                      .id('servicePage.advisory')
+                      .id('servicePage-advisory')
                       .child(
                         S.document()
                           .schemaType('servicePage')
-                          .documentId('servicePage.advisory')
+                          .documentId('servicePage-advisory')
                           .title('Business Advisory')
                       ),
                     S.listItem()
                       .title('Business Structuring')
-                      .id('servicePage.business-structuring')
+                      .id('servicePage-business-structuring')
                       .child(
                         S.document()
                           .schemaType('servicePage')
-                          .documentId('servicePage.business-structuring')
+                          .documentId('servicePage-business-structuring')
                           .title('Business Structuring')
                       ),
                     S.listItem()
                       .title('International Structuring')
-                      .id('servicePage.international')
+                      .id('servicePage-international')
                       .child(
                         S.document()
                           .schemaType('servicePage')
-                          .documentId('servicePage.international')
+                          .documentId('servicePage-international')
                           .title('International Structuring')
                       ),
                     S.listItem()
                       .title('Family Office Structuring')
-                      .id('servicePage.family-office')
+                      .id('servicePage-family-office')
                       .child(
                         S.document()
                           .schemaType('servicePage')
-                          .documentId('servicePage.family-office')
+                          .documentId('servicePage-family-office')
                           .title('Family Office Structuring')
                       ),
                     S.listItem()
                       .title('Business Exit Strategy')
-                      .id('servicePage.exit-strategy')
+                      .id('servicePage-exit-strategy')
                       .child(
                         S.document()
                           .schemaType('servicePage')
-                          .documentId('servicePage.exit-strategy')
+                          .documentId('servicePage-exit-strategy')
                           .title('Business Exit Strategy')
                       ),
                   ])

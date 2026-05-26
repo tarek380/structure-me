@@ -496,7 +496,7 @@ async function main() {
   console.log(`▸ Sanity service pages build — project=${PROJECT_ID} dataset=${DATASET}`)
 
   for (const slug of SLUGS) {
-    const docId = `servicePage.${slug}`
+    const docId = `servicePage-${slug}`
     console.log(`  ▸ ${slug}`)
 
     let doc

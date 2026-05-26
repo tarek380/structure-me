@@ -23,6 +23,13 @@ import servicePillar from './objects/servicePillar'
 import thirdsCard from './objects/thirdsCard'
 import faqItem from './objects/faqItem'
 
+// Phase 4 schemas
+import contactPage from './contactPage'
+import insightsIndexPage from './insightsIndexPage'
+import subscribeDetailsPage from './subscribeDetailsPage'
+import thankYouSubscribePage from './thankYouSubscribePage'
+import contactMetaItem from './objects/contactMetaItem'
+
 export const schemaTypes = [
   // Existing
   insightsPost,
@@ -46,4 +53,10 @@ export const schemaTypes = [
   servicePillar,
   thirdsCard,
   faqItem,
+  // Phase 4 singletons + objects
+  contactPage,
+  insightsIndexPage,
+  subscribeDetailsPage,
+  thankYouSubscribePage,
+  contactMetaItem,
 ]

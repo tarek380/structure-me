@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- =========================================================
+         PRIMARY SEO
+         ========================================================= -->
+    <title>Business Advisory | Business Advisers · Structure Me</title>
+    <meta
+      name="description"
+      content="Business advisory for the top half percent. Structures, capital solutions, government grants and exit-readiness for Australian founders and family offices — advice tied to real transactions, not billable hours."
+    />
+    <meta name="keywords" content="business advisory, business adviser, business advisers, corporate advisory, capital advisory, business structuring, exit readiness, government grants, private credit, family office, Melbourne, Sydney, Australia" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.structureme.com.au/advisory" />
+
+    <!-- =========================================================
+         OPEN GRAPH / SOCIAL
+         ========================================================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Structure Me" />
+    <meta property="og:title" content="Business Advisory for the top half percent · Structure Me" />
+    <meta
+      property="og:description"
+      content="Structures, capital, grants and exit-readiness for Australian founders and family offices. Advice tied to real transactions, not billable hours."
+    />
+    <meta property="og:image" content="https://www.structureme.com.au/img/advisory-hero.jpg" />
+    <meta property="og:url" content="https://www.structureme.com.au/advisory" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Business Advisory | Structure Me" />
+    <meta
+      name="twitter:description"
+      content="Structures, capital, grants and exit-readiness for Australian founders and family offices."
+    />
+    <meta name="twitter:image" content="https://www.structureme.com.au/img/advisory-hero.jpg" />
+
+    <!-- =========================================================
+         FONTS + STYLES
+         ========================================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230a0a0a"/><g fill="none" stroke="%23c8a24a" stroke-width="2" stroke-linecap="square"><path d="M8 8h12M8 16h12M8 24h12"/><path d="M22 8v16"/></g></svg>'
+    />
+
+    <!-- =========================================================
+         STRUCTURED DATA — Service + Breadcrumb + FAQ + Organization
+         Designed for both Google and AI search engines.
+         ========================================================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.structureme.com.au/#organization",
+            "name": "Structure Me",
+            "url": "https://www.structureme.com.au/",
+            "email": "tarek@structureme.com.au",
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "AU",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.structureme.com.au/advisory#webpage",
+            "url": "https://www.structureme.com.au/advisory",
+            "name": "Business Advisory | Structure Me",
+            "about": { "@id": "https://www.structureme.com.au/advisory#service" },
+            "inLanguage": "en-AU"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.structureme.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.structureme.com.au/#business" },
+              { "@type": "ListItem", "position": 3, "name": "Business Advisory", "item": "https://www.structureme.com.au/advisory" }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://www.structureme.com.au/advisory#service",
+            "name": "Business Advisory",
+            "alternateName": ["Corporate Advisory", "Business Advisers", "Strategic Business Advisory"],
+            "serviceType": "Business advisory, corporate finance and capital solutions",
+            "provider": { "@id": "https://www.structureme.com.au/#organization" },
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Australian founders, private boards and family offices with revenue up to AUD $300M"
+            },
+            "description": "Business advisory for the top half percent. Structures for asset protection, lending and grants; capital advisory across debt, equity and government grants; bespoke capital solutions; and exit-readiness preparation — all tied to real transactions rather than billable hours.",
+            "url": "https://www.structureme.com.au/advisory",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Business advisory services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate structures — offensive and defensive" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Government and R&D grant structuring" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate finance and capital strategy" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private debt, private credit and bespoke capital solutions" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business exit-readiness preparation" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Network introductions, joint ventures and entrepreneur community" } }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When should I engage a business adviser?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Typical scenarios include starting a new business, rapid growth, turnaround, cashflow pressure, protecting assets, divesting business arms, raising capital, or preparing to sell. In practice, the earlier the better — the structural decisions that protect a sale or a raise are usually made years in advance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between a business adviser and a consultant?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Consultants tend to provide thematic advice without a deliverable. Advisers — particularly licensed or accredited ones — have a core deliverable alongside the advice: an accountant sets up the trust, a lawyer files the matter, Structure Me designs the corporate architecture and sources the capital that the advice depends on."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes a good business adviser?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Two things: holistic judgement and a real network. A good adviser sees how an answer in one area (structure, tax, capital, governance) ripples into the others. A great adviser brings a network — family offices, wholesale funds, private equity, specialist counsel — that can convert advice into outcomes the owner could not access alone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the role of a business adviser?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "To help the owner make decisions that compound over time — about structure, capital, partners and exit — and to translate those decisions into implemented architecture. Specialists who only see one column of the business often miss how their advice impacts the others. The role of a good adviser is to hold the whole picture."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between a business adviser and a business coach?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A business adviser focuses on the technical — finance, structure, legal, governance, capital. A business coach focuses on the psychology of the operator. Structure Me sits firmly on the technical side, while introducing founders to a network of family offices and operators that shifts the psychology of what is possible."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What do business advisers do at Structure Me?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We specialise in corporate structures for private businesses, corporate finance, debt and equity instrument design, shareholder negotiations and sourcing of traditional and non-traditional capital. We treat the client's business as our own and stay on the field until the architecture is built, the capital is in, and the outcome is delivered."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="page-service">
+    <!-- ================================================================
+         NAV
+         ================================================================ -->
+    <header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Structure Me — Home">
+          <svg
+            class="nav-logo"
+            viewBox="0 0 40 28"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-controls="navOverlay"
+            aria-expanded="false"
+            type="button"
+          >
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================================
+         FULLSCREEN MENU OVERLAY
+         ================================================================ -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="international.html" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="family-office.html" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="insights.html" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         BREADCRUMBS
+         ================================================================ -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="breadcrumbs-inner">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li><a href="index.html#business">Services</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li aria-current="page">Business Advisory</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ================================================================
+         HERO
+         ================================================================ -->
+    <section class="service-hero" aria-labelledby="advisory-h1">
+      <div class="service-hero-inner">
+        <div class="service-hero-content">
+          <span class="section-eyebrow">— Business Advisers · Focused on real results</span>
+          <h1 id="advisory-h1" class="service-hero-title">
+            Business <em>advisory</em><br />from the top half percent.
+          </h1>
+          <p class="service-hero-lede">
+            We are a financial, investment and business advisory firm working
+            with private businesses doing up to <strong>AUD&nbsp;$300M</strong>
+            and the family offices that capitalise them. Because we are
+            focused on transactions, we only provide advice where a future
+            funding, investment or M&amp;A outcome is likely — so we do not
+            bill for hours for the sake of billing for hours.
+          </p>
+        </div>
+
+        <figure class="service-hero-figure" aria-hidden="true">
+          <div class="service-hero-image"></div>
+          <figcaption class="service-hero-cap">
+            <span class="divider-rule"></span>
+            <span>Counsel · Capital · Structure</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION A — CORPORATE STRUCTURES (image right)
+         ================================================================ -->
+    <section class="svc-pillar" aria-labelledby="pillar-structures">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 01 · Real solutions, not paperwork</span>
+          <h2 id="pillar-structures" class="section-title">
+            The right <em>structures</em><br />for a business that will thrive.
+          </h2>
+          <p>
+            Whether the goal is to expand, protect what you have built, or
+            prepare for a future transaction, the corporate structure is the
+            single most decisive choice an owner makes. It sets the ceiling on
+            borrowing, the floor on tax, the cleanliness of an eventual sale,
+            and the resilience of the business if something goes wrong.
+          </p>
+
+          <div class="svc-pillar-two">
+            <div>
+              <h3>Offensive structures</h3>
+              <ul>
+                <li>Maximise borrowing capacity — banks and private credit.</li>
+                <li>Maximise the eventual sale value of the business.</li>
+                <li>Bring investment capital in without surrendering control.</li>
+                <li>Build the architecture private equity actually buys.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Defensive structures</h3>
+              <ul>
+                <li>Protect personal and external assets from business risk.</li>
+                <li>Quarantine individual business assets from one another.</li>
+                <li>Divest loss-making arms cleanly when the time comes.</li>
+                <li>Preserve the core business in a worst-case scenario.</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="contact.html" class="svc-link">
+            <span>Speak to a business adviser</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure svc-pillar-figure--portrait" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/advisory-structures.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION B — GOVERNMENT GRANTS (image left)
+         ================================================================ -->
+    <section class="svc-pillar svc-pillar--reverse svc-pillar--cream" aria-labelledby="pillar-grants">
+      <div class="svc-pillar-inner">
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/advisory-grants.jpg');"></div>
+        </figure>
+
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 02 · Expand the funding envelope</span>
+          <h2 class="section-title">
+            Business advisers who <em>unlock grants</em>.
+          </h2>
+          <p>
+            We make clients eligible for government and competitive grants in
+            cases where, on the face of it, they would not be. Because of our
+            depth in R&amp;D and competitive grant programs — and our work
+            with four specialist grant consultants — we can structure a
+            business so the money on the table actually reaches it.
+          </p>
+
+          <div class="svc-pillar-two">
+            <div>
+              <h3>Research &amp; development</h3>
+              <ul>
+                <li>Restructure businesses doing more than $20M so they remain eligible.</li>
+                <li>Convert R&amp;D tax offsets into cash rebates where the structure allows.</li>
+                <li>Arrange finance against approved government grant entitlements.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Competitive grants</h3>
+              <ul>
+                <li>Position the business for hundreds of grants live at any one time.</li>
+                <li>Pair grant capital with private credit to accelerate deployment.</li>
+                <li>Coordinate four specialist consultants by domain.</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="contact.html" class="svc-link">
+            <span>Speak to a business adviser</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION C — CORPORATE FINANCE (image right)
+         ================================================================ -->
+    <section class="svc-pillar" aria-labelledby="pillar-finance">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 03 · Long-term focused</span>
+          <h2 id="pillar-finance" class="section-title">
+            Business advisers who understand <em>corporate finance</em>.
+          </h2>
+          <p>
+            How a business holds and deploys capital — debt, equity, hybrids —
+            is an artform few practise well. Paired with our structuring
+            work, we help owners maximise what they can raise from both
+            traditional and non-traditional sources, and we engineer the
+            instruments that make the deal work.
+          </p>
+
+          <ul class="svc-pillar-list">
+            <li>Capital planning for growth — sequenced to the business plan, not the market window.</li>
+            <li>Layering debt to maximise the total facility size available to the business.</li>
+            <li>Choosing between bank, second-tier and private credit by project and by risk.</li>
+            <li>Structuring the business to maximise the number and type of grants available.</li>
+            <li>Engineering the right debt, equity or hybrid instrument to serve the actual mission.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Speak to a business adviser</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/advisory-finance.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION D — CAPITAL SOLUTIONS (image left)
+         ================================================================ -->
+    <section class="svc-pillar svc-pillar--reverse svc-pillar--cream" aria-labelledby="pillar-capital">
+      <div class="svc-pillar-inner">
+        <figure class="svc-pillar-figure svc-pillar-figure--portrait" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/advisory-capital.jpg');"></div>
+        </figure>
+
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 04 · Real capital, not introductions</span>
+          <h2 id="pillar-capital" class="section-title">
+            Business advisers with <em>real capital solutions</em>.
+          </h2>
+          <p>
+            We provide the funding certainty most advisers cannot. Because we
+            have spent years building relationships with family offices,
+            wholesale funds and private equity groups, we can engineer
+            unconventional capital solutions and source capital that brokers
+            simply do not have access to.
+          </p>
+
+          <ul class="svc-pillar-list">
+            <li>Private debt funded by family offices — immediate, decisive capital.</li>
+            <li>Private credit funded by institutional players for long-term growth.</li>
+            <li>Engineered financial products — including underwriting and asset-backed facilities — built where nothing existed.</li>
+            <li>Traditional bank and second-tier facilities through long-standing relationships.</li>
+            <li>Specialised asset finance for the unusual collateral the banks won't lend against.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Speak to a business adviser</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION E — EXIT READINESS (dark feature band, image right)
+         ================================================================ -->
+    <section class="svc-pillar svc-pillar--dark" aria-labelledby="pillar-exit">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 05 · Exit-ready</span>
+          <h2 id="pillar-exit" class="section-title">
+            Business advisers who make you <em>exit-ready</em>.
+          </h2>
+          <p>
+            Exit readiness is the discipline of putting the business in a
+            position of strength from day one, so that when the sale comes —
+            three, five or ten years away — it is a high-conviction transaction
+            rather than a fire-sale. Most owners are consumed by the day-to-day
+            and forget that, eventually, the business will need to be sold.
+            That oversight costs millions.
+          </p>
+          <p>
+            Because we work alongside private equity buyers, we know what they
+            look for, and we &ldquo;dress the bride&rdquo; — sometimes years in
+            advance — so the corporate hygiene is unimpeachable when the
+            diligence pack lands.
+          </p>
+
+          <ul class="svc-pillar-list svc-pillar-list--dark">
+            <li>The correct corporate structure, from the outset.</li>
+            <li>Key-personnel agreements in place, with sensible incentives.</li>
+            <li>Financials prepared with the metrics PE actually underwrites.</li>
+            <li>Key supplier and customer agreements documented and assignable.</li>
+            <li>Operations self-sufficient — not founder-dependent.</li>
+            <li>Loss-making arms divested cleanly, well before sale.</li>
+            <li>The story of the business and its PR positioning, established.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link svc-link--dark">
+            <span>Speak to a business adviser</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/advisory-exit.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION F — FAMILY OF ENTREPRENEURS (philosophy band)
+         ================================================================ -->
+    <section class="svc-family" aria-labelledby="pillar-family">
+      <div class="svc-family-inner">
+        <span class="section-eyebrow">— 06 · A family of entrepreneurs</span>
+        <h2 id="pillar-family" class="section-title">
+          Business advisory <em>done differently</em>.
+        </h2>
+        <p class="svc-family-lede">
+          A material part of the value we deliver is the network of operators
+          and investors we sit at the centre of. When the work is the right
+          fit, we introduce clients to one another — to compound revenue,
+          deal-flow and judgement that none of them would have on their own.
+        </p>
+
+        <ul class="svc-family-list" role="list">
+          <li>
+            <span class="svc-family-num">i.</span>
+            <p>Look for joint-venture and revenue opportunities between you and the rest of our client base.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">ii.</span>
+            <p>Open the door to our network — for capital, customers or specialist counsel — when it serves you.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">iii.</span>
+            <p>Quarterly dinners with other founders to compare notes — the wins, the losses, the trades worth making.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">iv.</span>
+            <p>Be the call you make when something hard lands on the desk.</p>
+          </li>
+        </ul>
+
+        <blockquote class="svc-family-quote">
+          &ldquo;Business advisory needs to be tied to the long-term success
+          of the client — because the long term is where the upside lives for
+          everyone in the room.&rdquo;
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         THREE-PILLAR "WHY US" — 1/3 · 2/3 · 3/3
+         ================================================================ -->
+    <section class="svc-thirds" aria-labelledby="thirds-h">
+      <div class="svc-thirds-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Why us</span>
+          <h2 id="thirds-h" class="section-title">
+            Three reasons<br /> private owners <em>retain us</em>.
+          </h2>
+        </div>
+
+        <div class="svc-thirds-grid">
+          <article class="svc-third">
+            <div class="svc-third-num">1 / 3</div>
+            <h3>Patterns from $300M businesses</h3>
+            <p>
+              We work with private clients up to AUD&nbsp;$300M and with the
+              family offices that fund them. The pattern recognition that comes
+              from operating at that altitude — across industries — is what
+              compounds into the advice we give you. Our learning is ongoing,
+              and with it the solutions we can engineer for your business.
+            </p>
+          </article>
+
+          <article class="svc-third">
+            <div class="svc-third-num">2 / 3</div>
+            <h3>A network broader than advice</h3>
+            <p>
+              We do not work in isolation. We coordinate four specialist grant
+              consultants, wholesale funds, family offices and private equity
+              groups. That breadth means we can bring solutions to your problem
+              that a traditional adviser, working alone, cannot.
+            </p>
+          </article>
+
+          <article class="svc-third">
+            <div class="svc-third-num">3 / 3</div>
+            <h3>Aligned to outcomes, not hours</h3>
+            <p>
+              Advisory is not our main source of revenue — transactions and
+              investments are. That is on purpose. It means we will never
+              recommend work that doesn't lead somewhere, and we will never
+              bill for hours that don't move you forward. Our incentives are
+              tied to your outcome.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FAQ
+         ================================================================ -->
+    <section class="svc-faq" id="faq" aria-labelledby="svc-faq-h">
+      <div class="svc-faq-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Questions</span>
+          <h2 id="svc-faq-h" class="section-title">
+            What owners ask us<br /><em>before</em> they engage.
+          </h2>
+        </div>
+
+        <div class="svc-faq-list">
+          <details class="svc-faq-item" open>
+            <summary>
+              <span class="svc-faq-q">When should I engage a business adviser?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>
+                Typical scenarios include starting a new business, rapid
+                growth, turnaround, cashflow pressure, protecting assets,
+                divesting business arms, raising capital, or preparing to sell.
+                In practice, the earlier the better — the structural decisions
+                that protect a sale or a raise are usually made years in
+                advance.
+              </p>
+            </div>
+          </details>
+
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What is the difference between a business adviser and a consultant?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>
+                Consultants tend to provide thematic advice without a
+                deliverable. Advisers — particularly licensed or accredited
+                ones — have a core deliverable alongside the advice: an
+                accountant sets up the trust, a lawyer files the matter,
+                Structure Me designs the corporate architecture and sources
+                the capital that the advice depends on.
+              </p>
+            </div>
+          </details>
+
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What makes a good business adviser?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>
+                Two things: holistic judgement and a real network. A good
+                adviser sees how an answer in one area — structure, tax,
+                capital, governance — ripples into the others. A great adviser
+                brings a network of family offices, wholesale funds, private
+                equity and specialist counsel that can convert advice into
+                outcomes the owner could not reach alone.
+              </p>
+              <p>
+                Anyone can collect a degree, a few years of experience and a
+                business card. Far fewer have raised capital, run a
+                restructure, and engineered new financial products to get a
+                client out of trouble. That is what real advisory looks like.
+              </p>
+            </div>
+          </details>
+
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What is the role of a business adviser?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>
+                To help the owner make the decisions that compound over time —
+                about structure, capital, partners and exit — and to translate
+                those decisions into implemented architecture. Specialists who
+                only see one column of the business often miss how their
+                advice impacts the others. The role of a good adviser is to
+                hold the whole picture.
+              </p>
+            </div>
+          </details>
+
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What is the difference between a business adviser and a business coach?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>
+                A business adviser focuses on the technical — finance,
+                structure, legal, governance, capital. A business coach focuses
+                on the psychology of the operator. Structure Me sits firmly on
+                the technical side, while introducing founders to a network of
+                family offices and operators that shifts the psychology of
+                what is possible.
+              </p>
+            </div>
+          </details>
+
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What do business advisers do at Structure Me?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>
+                We specialise in corporate structures for private businesses,
+                corporate finance, debt and equity instrument design,
+                shareholder negotiations and the sourcing of traditional and
+                non-traditional capital. We treat the client's business as our
+                own and stay on the field until the architecture is built, the
+                capital is in, and the outcome is delivered.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT
+         ================================================================ -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-image" aria-hidden="true">
+          <div class="contact-image-frame"></div>
+          <svg class="contact-orbit-overlay" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="#c8a24a" stroke-width="0.4" opacity="0.45">
+              <circle cx="200" cy="200" r="80" />
+              <circle cx="200" cy="200" r="140" />
+              <circle cx="200" cy="200" r="190" />
+            </g>
+            <g fill="#c8a24a">
+              <circle cx="200" cy="200" r="4" />
+              <circle cx="200" cy="60" r="2.5" opacity="0.7" />
+              <circle cx="340" cy="200" r="2.5" opacity="0.7" />
+              <circle cx="200" cy="340" r="2.5" opacity="0.7" />
+              <circle cx="60" cy="200" r="2.5" opacity="0.7" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="contact-content">
+          <span class="section-eyebrow">— Begin</span>
+          <h2 class="contact-title">
+            Most advisory engagements begin with a <em>quiet conversation</em>.
+          </h2>
+          <p class="contact-lede">
+            Whether you are planning a capital raise, contemplating sale, or
+            simply re-thinking how the business is held — start with a
+            confidential introduction. There is no obligation, and no second
+            party in the room.
+          </p>
+
+          <div class="contact-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>Request an introduction</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         RELATED SERVICES
+         ================================================================ -->
+    <section class="svc-related" aria-labelledby="svc-related-h">
+      <div class="svc-related-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Continue</span>
+          <h2 id="svc-related-h" class="section-title">
+            Related <em>disciplines</em>.
+          </h2>
+        </div>
+        <div class="svc-related-grid">
+          <a class="svc-related-card" href="business-structuring.html">
+            <span class="svc-related-num">02 / 05</span>
+            <h3>Business Structuring</h3>
+            <p>Companies, trusts and hybrid structures designed for protection, capital and sale.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+          <a class="svc-related-card" href="international.html">
+            <span class="svc-related-num">03 / 05</span>
+            <h3>International Business Structuring</h3>
+            <p>Cross-border holding, IP and operating structures across reputable jurisdictions.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+          <a class="svc-related-card" href="exit-strategy.html">
+            <span class="svc-related-num">05 / 05</span>
+            <h3>Business Exit Strategy</h3>
+            <p>Re-architect the business years before a transaction — clean, defensible, tax-efficient.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         FOOTER
+         ================================================================ -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg
+            class="footer-logo"
+            viewBox="0 0 40 28"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="advisory.html">Business advisory</a>
+            <a href="business-structuring.html">Business structuring</a>
+            <a href="international.html">International business structuring</a>
+            <a href="family-office.html">Family office structuring</a>
+            <a href="exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="about.html">About</a>
+            <a href="about.html#team">The team</a>
+            <a href="insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script>
+      // Fullscreen menu overlay
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () {
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          toggle.classList.add('is-active');
+          toggle.setAttribute('aria-label', 'Close menu');
+          toggle.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('nav-open');
+        };
+        var close = function () {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          toggle.classList.remove('is-active');
+          toggle.setAttribute('aria-label', 'Open menu');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        };
+        toggle.addEventListener('click', function () {
+          if (overlay.classList.contains('is-open')) close();
+          else open();
+        });
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function () {
+            setTimeout(close, 60);
+          });
+        }
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+        });
+      })();
+    </script>
+  </body>
+</html>

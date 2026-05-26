@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>Family Office Structuring | Wealth Architecture & Succession · Structure Me</title>
+    <meta name="description" content="Family office structuring for Australian and cross-border private wealth: holding and investment vehicles, trust and foundation structures, succession and governance, residency planning, and private capital coordination." />
+    <meta name="keywords" content="family office structuring, family office, wealth structuring, succession, governance, holding company, trust, residency, private wealth, Australia, Melbourne" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.structureme.com.au/family-office" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Structure Me" />
+    <meta property="og:title" content="Family Office Structuring · Structure Me" />
+    <meta property="og:description" content="Holding and investment vehicles, succession, governance and private capital — architected for intergenerational private wealth." />
+    <meta property="og:image" content="https://www.structureme.com.au/img/service-family-1-holdings.jpg" />
+    <meta property="og:url" content="https://www.structureme.com.au/family-office" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Family Office Structuring · Structure Me" />
+    <meta name="twitter:description" content="Holding and investment vehicles, succession, governance and private capital — architected for intergenerational private wealth." />
+    <meta name="twitter:image" content="https://www.structureme.com.au/img/service-family-1-holdings.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230a0a0a"/><g fill="none" stroke="%23c8a24a" stroke-width="2" stroke-linecap="square"><path d="M8 8h12M8 16h12M8 24h12"/><path d="M22 8v16"/></g></svg>'
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.structureme.com.au/#organization",
+            "name": "Structure Me",
+            "url": "https://www.structureme.com.au/",
+            "email": "tarek@structureme.com.au",
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "AU",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.structureme.com.au/family-office#webpage",
+            "url": "https://www.structureme.com.au/family-office",
+            "name": "Family Office Structuring | Wealth Architecture & Succession \u00b7 Structure Me",
+            "about": { "@id": "https://www.structureme.com.au/family-office#service" },
+            "inLanguage": "en-AU"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.structureme.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.structureme.com.au/#familyoffice" },
+              { "@type": "ListItem", "position": 3, "name": "Family Office Structuring", "item": "https://www.structureme.com.au/family-office" }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://www.structureme.com.au/family-office#service",
+            "name": "Family Office Structuring",
+            "alternateName": ["Single Family Office Structuring", "Private Wealth Structuring", "Family Capital Architecture"],
+            "serviceType": "Family office and private wealth structuring, succession and governance",
+            "provider": { "@id": "https://www.structureme.com.au/#organization" },
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Australian and international private families, single family offices and principals with substantial private wealth"
+            },
+            "description": "Family office structuring for Australian and cross-border private wealth: holding and investment vehicles, trust and foundation structures, succession and governance, residency and tax-residence planning, and coordination of private capital across investment, lending and operating businesses.",
+            "url": "https://www.structureme.com.au/family-office",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Family Office Structuring \u2014 services",
+              "itemListElement": [
+
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Family holding and investment vehicles for private capital"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Trust and foundation structures for asset segregation and succession"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Multi-generational succession and governance architecture"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Residency and tax-residence planning for principals and beneficiaries"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Coordination of private capital across operating, investing and lending activities"
+                }
+        }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+        {
+                "@type": "Question",
+                "name": "What is a single family office and do I need one?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A single family office is a private organisation that manages the affairs \u2014 investment, tax, succession, philanthropy, governance \u2014 of one family. You need one once the complexity and capital warrant a dedicated team rather than ad-hoc adviser relationships. For most families that threshold sits somewhere between AUD $30M and $50M of private wealth, though it varies meaningfully with complexity rather than size alone."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "How do you structure a family office in Australia?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Typically: an apex discretionary family trust holding shares in a family holding company, which in turn owns the operating businesses, investment company and property sub-trusts. A trustee company sits at the head, with appointor succession defined in the deed and the family constitution. Bucket companies and SMSFs sit alongside for tax smoothing and retirement. The architecture is layered deliberately, not flat."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "What is the role of a family constitution?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The family constitution is what makes the legal structure behave like a governed institution. It defines values, decision rights, branch representation, conflict resolution, education for the next generation, and the principles for engaging external advisers. Without it, the trust deeds and shareholder agreements are read in isolation \u2014 and disagreements escalate to litigation rather than family council."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "Can a family office invest directly in private companies and private credit?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, and increasingly should. The premium for private market access \u2014 particularly private credit, where institutional yields have re-rated \u2014 is meaningful relative to public markets. We design the deployment architecture: SPV per position, co-investment vehicles alongside other family offices, governance to prevent over-concentration, and reporting that is honest about loss as well as gain."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "How do residency and cross-border family members affect the structure?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Significantly. If principals or beneficiaries become tax-resident overseas, distribution policy needs to be adjusted, management-and-control risk for entities needs to be managed, and reporting obligations multiply. We design structures that accommodate movement \u2014 not ones that break the first time a child studies in London or a principal retires to Singapore."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "Do you replace our accountant, lawyer or investment adviser?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. We coordinate them. The family's accountant runs the tax and compliance. The lawyer drafts the deeds and agreements. The investment advisers manage the portfolios. Our role is the architect's role \u2014 the brief, the integration, and the long-term coherence between them. That is the gap families repeatedly tell us has been missing."
+                }
+        }
+]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="page-service" id="top">
+    <header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Structure Me — Home">
+          <svg class="nav-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navOverlay" aria-expanded="false" type="button">
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="international.html" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="#top" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="insights.html" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="breadcrumbs-inner">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li><a href="index.html#familyoffice">Services</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li aria-current="page">Family Office Structuring</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="service-hero">
+      <div class="service-hero-inner">
+        <div class="service-hero-content">
+          <span class="section-eyebrow">— Family Office · Architecture for private wealth</span>
+          <h1 class="service-hero-title">
+            Family office <em>structuring</em><br />built across generations.
+          </h1>
+          <p class="service-hero-lede">
+            Family-office structuring is the discipline of holding private wealth — operating businesses, investments, property, art, philanthropy — under architecture that survives the principals who created it. Done well, it concentrates control, distributes economic benefit, and quietly compounds for fifty years. Done poorly, it dissolves in a generation.
+          </p>
+        </div>
+
+        <figure class="service-hero-figure" aria-hidden="true">
+          <div class="service-hero-image" style="background-image: url('img/service-family-1-holdings.jpg');"></div>
+          <figcaption class="service-hero-cap">
+            <span class="divider-rule"></span>
+            <span>Counsel · Capital · Structure</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-pillar">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 01 · The apex of the structure</span>
+          <h2 class="section-title">
+            Holding and <em>investment</em><br />vehicles for private capital.
+          </h2>
+          <p>Above the operating businesses, the family needs a vehicle that holds investments, receives capital from sales and dividends, and deploys it back across new ventures, public markets, private equity and property. The apex vehicle determines how cleanly capital flows and how flexibly it can be redirected.</p>
+
+          <div class="svc-pillar-two">
+            <div>
+              <h3>Core apex vehicles</h3>
+              <ul>
+                <li>Family holding company holding shares in operating businesses.</li>
+                <li>Investment company for liquid markets and managed funds.</li>
+                <li>Real estate sub-trust for commercial and residential holdings.</li>
+                <li>SMSF or pension wrapper for principals approaching retirement.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>How they connect</h3>
+              <ul>
+                <li>Dividend flows from operating businesses up to the holding company.</li>
+                <li>Investment capital deployed downward into new positions.</li>
+                <li>Trust above the holding company for succession and distribution.</li>
+                <li>Bucket companies to smooth tax across volatile income years.</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-family-1-holdings.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-pillar svc-pillar--reverse svc-pillar--cream">
+      <div class="svc-pillar-inner">
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-family-2-foundation.jpg');"></div>
+        </figure>
+
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 02 · Trusts and foundations</span>
+          <h2 class="section-title">
+            Trust and <em>foundation</em><br />structures done seriously.
+          </h2>
+          <p>Trusts segregate assets, distribute economic benefit and survive death. Foundations — where used internationally — offer similar effects with different governance characteristics. Used together, they create a layered architecture that no single vehicle can replicate.</p>
+          <ul class="svc-pillar-list">
+            <li>Discretionary family trust with carefully drafted appointor and trustee lines.</li>
+            <li>Unit trust beneath the family trust for asset segregation and partner economics.</li>
+            <li>Charitable trust or ancillary fund for the family's philanthropy and tax positioning.</li>
+            <li>Offshore foundation or PTC structures where the international footprint warrants it.</li>
+            <li>Deed-of-variation and successor-appointor provisions tested across multiple lifetimes.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-pillar">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 03 · The handover, designed</span>
+          <h2 class="section-title">
+            Succession and <em>governance</em><br />across three generations.
+          </h2>
+          <p>Succession is not a will and a trust deed. It is a governance system — a family constitution, a board of advisers, a defined process for resolving disagreement, an investment committee that survives the founder, and a clear path for the next generation to engage with the wealth without being defined by it.</p>
+          <ul class="svc-pillar-list">
+            <li>Family constitution — values, decision rights, conflict resolution, branch representation.</li>
+            <li>Family council and investment committee with non-family advisers in the room.</li>
+            <li>Appointor and trustee-company succession aligned with the constitution.</li>
+            <li>Education and engagement pathway for the next generation, before they need it.</li>
+            <li>Annual family meeting cadence with real agenda, not ceremonial gathering.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-family-3-succession.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-pillar svc-pillar--reverse svc-pillar--cream">
+      <div class="svc-pillar-inner">
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-family-4-residency.jpg');"></div>
+        </figure>
+
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 04 · Where the family lives</span>
+          <h2 class="section-title">
+            Residency and <em>tax-residence</em><br />planning, done quietly.
+          </h2>
+          <p>Where principals and beneficiaries are tax-resident, and where the family vehicles are managed and controlled, dictates the tax treatment of every dollar in the structure. For families with cross-border members — students, expats, dual citizens — the architecture must accommodate movement without breaking.</p>
+          <ul class="svc-pillar-list">
+            <li>Map the current and likely future tax residency of every principal and beneficiary.</li>
+            <li>Identify management-and-control risk for entities when directors move offshore.</li>
+            <li>Design distribution policy to align with residency of beneficiaries each year.</li>
+            <li>Coordinate with investment migration counsel where second residency is in scope.</li>
+            <li>Document the residency rationale annually — not retrospectively when audited.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-pillar svc-pillar--dark">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 05 · Capital, coordinated</span>
+          <h2 class="section-title">
+            Private capital, <em>coordinated</em><br />across the whole estate.
+          </h2>
+          <p>Most families end up with capital in pockets — an operating business, a few investments, real estate, super, perhaps a venture portfolio — managed in silos by different advisers. The whole, viewed from above, is rarely deliberate. We sit at the apex and coordinate.</p>
+          <p>Where there is appetite, we also help the family deploy capital as private credit and private equity into other businesses — turning the family office from a passive holder of wealth into an active operator within a defined risk envelope.</p>
+          <ul class="svc-pillar-list svc-pillar-list--dark">
+            <li>Whole-of-estate balance sheet — operating, investments, property, liquid, illiquid.</li>
+            <li>Defined asset-allocation policy across public markets, private equity, real estate and credit.</li>
+            <li>Private debt and private credit deployment to other private businesses, on the family's terms.</li>
+            <li>Co-investment alongside other family offices in deals the family alone could not access.</li>
+            <li>Annual liquidity and capital-deployment plan tied to the family's actual needs.</li>
+            <li>Reporting to the family council that is honest about both wins and losses.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link svc-link--dark">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-family-5-capital.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-family">
+      <div class="svc-family-inner">
+        <span class="section-eyebrow">— 06 · A family-office mindset</span>
+        <h2 class="section-title">
+          Wealth that <em>compounds across generations</em>.
+        </h2>
+        <p class="svc-family-lede">
+          Our work for family offices is the work we like best. The horizon is long, the relationships are durable, and the architecture has time to compound. We treat the family's capital as we would treat our own — with restraint, patience and a clear view of the second-generation outcome.
+        </p>
+
+        <ul class="svc-family-list" role="list">
+          <li>
+            <span class="svc-family-num">i.</span>
+            <p>Build the apex architecture with the next two generations in the room.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">ii.</span>
+            <p>Coordinate the family's accountant, lawyer, banker and investment advisers from above.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">iii.</span>
+            <p>Introduce the family office to other family offices we work with, where it serves.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">iv.</span>
+            <p>Stay engaged for years — succession is a relationship, not a project.</p>
+          </li>
+        </ul>
+
+        <blockquote class="svc-family-quote">
+          &ldquo;A family office is built once and lives for a hundred years. We design for the hundred years, not the next financial year.&rdquo;
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="svc-thirds">
+      <div class="svc-thirds-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Why us</span>
+          <h2 class="section-title">
+            Three reasons<br /> private owners <em>retain us</em>.
+          </h2>
+        </div>
+
+        <div class="svc-thirds-grid">
+          <article class="svc-third">
+            <div class="svc-third-num">1 / 3</div>
+            <h3>Architect, not custodian</h3>
+            <p>We design the architecture and stay engaged while it is used. We do not custody assets, manage portfolios or charge on funds under management — the structure is what we are accountable for.</p>
+          </article>
+          <article class="svc-third">
+            <div class="svc-third-num">2 / 3</div>
+            <h3>A network of family offices</h3>
+            <p>We sit alongside other family offices and arrange co-investment, deal-flow and joint-venture opportunities between them. Wealth grows faster, and with less risk, inside a network than alone.</p>
+          </article>
+          <article class="svc-third">
+            <div class="svc-third-num">3 / 3</div>
+            <h3>Built for the second generation</h3>
+            <p>The structures we design are explicitly tested against the second-generation handover — the one most families do not survive in capital terms. That is the bar we hold the architecture to.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-faq" id="faq">
+      <div class="svc-faq-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Questions</span>
+          <h2 class="section-title">
+            What owners ask us<br /><em>before</em> they engage.
+          </h2>
+        </div>
+
+        <div class="svc-faq-list">
+          <details class="svc-faq-item" open>
+            <summary>
+              <span class="svc-faq-q">What is a single family office and do I need one?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>A single family office is a private organisation that manages the affairs — investment, tax, succession, philanthropy, governance — of one family. You need one once the complexity and capital warrant a dedicated team rather than ad-hoc adviser relationships. For most families that threshold sits somewhere between AUD $30M and $50M of private wealth, though it varies meaningfully with complexity rather than size alone.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">How do you structure a family office in Australia?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Typically: an apex discretionary family trust holding shares in a family holding company, which in turn owns the operating businesses, investment company and property sub-trusts. A trustee company sits at the head, with appointor succession defined in the deed and the family constitution. Bucket companies and SMSFs sit alongside for tax smoothing and retirement. The architecture is layered deliberately, not flat.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What is the role of a family constitution?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>The family constitution is what makes the legal structure behave like a governed institution. It defines values, decision rights, branch representation, conflict resolution, education for the next generation, and the principles for engaging external advisers. Without it, the trust deeds and shareholder agreements are read in isolation — and disagreements escalate to litigation rather than family council.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">Can a family office invest directly in private companies and private credit?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Yes, and increasingly should. The premium for private market access — particularly private credit, where institutional yields have re-rated — is meaningful relative to public markets. We design the deployment architecture: SPV per position, co-investment vehicles alongside other family offices, governance to prevent over-concentration, and reporting that is honest about loss as well as gain.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">How do residency and cross-border family members affect the structure?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Significantly. If principals or beneficiaries become tax-resident overseas, distribution policy needs to be adjusted, management-and-control risk for entities needs to be managed, and reporting obligations multiply. We design structures that accommodate movement — not ones that break the first time a child studies in London or a principal retires to Singapore.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">Do you replace our accountant, lawyer or investment adviser?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>No. We coordinate them. The family's accountant runs the tax and compliance. The lawyer drafts the deeds and agreements. The investment advisers manage the portfolios. Our role is the architect's role — the brief, the integration, and the long-term coherence between them. That is the gap families repeatedly tell us has been missing.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-image" aria-hidden="true">
+          <div class="contact-image-frame"></div>
+          <svg class="contact-orbit-overlay" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="#c8a24a" stroke-width="0.4" opacity="0.45">
+              <circle cx="200" cy="200" r="80" />
+              <circle cx="200" cy="200" r="140" />
+              <circle cx="200" cy="200" r="190" />
+            </g>
+            <g fill="#c8a24a">
+              <circle cx="200" cy="200" r="4" />
+              <circle cx="200" cy="60" r="2.5" opacity="0.7" />
+              <circle cx="340" cy="200" r="2.5" opacity="0.7" />
+              <circle cx="200" cy="340" r="2.5" opacity="0.7" />
+              <circle cx="60" cy="200" r="2.5" opacity="0.7" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="contact-content">
+          <span class="section-eyebrow">— Begin</span>
+          <h2 class="contact-title">
+            Most engagements begin with a <em>quiet conversation</em>.
+          </h2>
+          <p class="contact-lede">
+            Whether you are planning a capital raise, contemplating sale, or
+            simply re-thinking how the business is held — start with a
+            confidential introduction. There is no obligation, and no second
+            party in the room.
+          </p>
+
+          <div class="contact-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>Request an introduction</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-related">
+      <div class="svc-related-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Continue</span>
+          <h2 class="section-title">
+            Related <em>disciplines</em>.
+          </h2>
+        </div>
+        <div class="svc-related-grid">
+          <a class="svc-related-card" href="advisory.html">
+            <span class="svc-related-num">01 / 05</span>
+            <h3>Business Advisory</h3>
+            <p>Structures, capital, grants and exit-readiness for owners up to AUD $300M.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+          <a class="svc-related-card" href="business-structuring.html">
+            <span class="svc-related-num">02 / 05</span>
+            <h3>Business Structuring</h3>
+            <p>Companies, trusts and hybrid structures for protection, capital and sale.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+          <a class="svc-related-card" href="international.html">
+            <span class="svc-related-num">03 / 05</span>
+            <h3>International Business Structuring</h3>
+            <p>Cross-border holding, IP and operating architecture across reputable jurisdictions.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="advisory.html">Business advisory</a>
+            <a href="business-structuring.html">Business structuring</a>
+            <a href="international.html">International business structuring</a>
+            <a href="family-office.html">Family office structuring</a>
+            <a href="exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="about.html">About</a>
+            <a href="about.html#team">The team</a>
+            <a href="insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () {
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          toggle.classList.add('is-active');
+          toggle.setAttribute('aria-label', 'Close menu');
+          toggle.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('nav-open');
+        };
+        var close = function () {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          toggle.classList.remove('is-active');
+          toggle.setAttribute('aria-label', 'Open menu');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        };
+        toggle.addEventListener('click', function () {
+          if (overlay.classList.contains('is-open')) close();
+          else open();
+        });
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function () {
+            setTimeout(close, 60);
+          });
+        }
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+        });
+      })();
+    </script>
+  </body>
+</html>

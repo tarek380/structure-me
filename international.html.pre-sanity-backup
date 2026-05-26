@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>International Business Structuring | Cross-Border Structures · Structure Me</title>
+    <meta name="description" content="International business structuring for Australian founders and family offices: jurisdiction selection, holding and IP, treaty alignment, substance and governance, inbound and outbound investment vehicles." />
+    <meta name="keywords" content="international structuring, cross-border, holding company, IP licensing, double tax treaty, substance, offshore, Singapore, Hong Kong, Australia, family office" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.structureme.com.au/international" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Structure Me" />
+    <meta property="og:title" content="International Business Structuring · Structure Me" />
+    <meta property="og:description" content="Cross-border holding, IP, treaty alignment, substance and inbound/outbound vehicles — for Australian owners and family offices." />
+    <meta property="og:image" content="https://www.structureme.com.au/img/service-intl-1-jurisdictions.jpg" />
+    <meta property="og:url" content="https://www.structureme.com.au/international" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="International Business Structuring · Structure Me" />
+    <meta name="twitter:description" content="Cross-border holding, IP, treaty alignment, substance and inbound/outbound vehicles — for Australian owners and family offices." />
+    <meta name="twitter:image" content="https://www.structureme.com.au/img/service-intl-1-jurisdictions.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230a0a0a"/><g fill="none" stroke="%23c8a24a" stroke-width="2" stroke-linecap="square"><path d="M8 8h12M8 16h12M8 24h12"/><path d="M22 8v16"/></g></svg>'
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.structureme.com.au/#organization",
+            "name": "Structure Me",
+            "url": "https://www.structureme.com.au/",
+            "email": "tarek@structureme.com.au",
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "AU",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.structureme.com.au/international#webpage",
+            "url": "https://www.structureme.com.au/international",
+            "name": "International Business Structuring | Cross-Border Structures \u00b7 Structure Me",
+            "about": { "@id": "https://www.structureme.com.au/international#service" },
+            "inLanguage": "en-AU"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.structureme.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.structureme.com.au/#international" },
+              { "@type": "ListItem", "position": 3, "name": "International Business Structuring", "item": "https://www.structureme.com.au/international" }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://www.structureme.com.au/international#service",
+            "name": "International Business Structuring",
+            "alternateName": ["Cross-Border Structuring", "Offshore Structuring", "International Corporate Structuring"],
+            "serviceType": "International business structuring, cross-border holding and IP architecture",
+            "provider": { "@id": "https://www.structureme.com.au/#organization" },
+            "areaServed": ["Australia", "Asia-Pacific", "International"],
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Australian founders, family offices and private boards operating cross-border or investing internationally"
+            },
+            "description": "International business structuring for Australian founders and family offices: jurisdiction selection, holding and IP vehicles, treaty alignment, substance and governance, and inbound/outbound investment architecture across reputable jurisdictions.",
+            "url": "https://www.structureme.com.au/international",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "International Business Structuring \u2014 services",
+              "itemListElement": [
+
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Jurisdiction selection across reputable, treaty-rich locations"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "International holding company and IP licensing structures"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Double-tax treaty and withholding-tax alignment"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Substance, governance and management-and-control planning"
+                }
+        },
+        {
+                "@type": "Offer",
+                "itemOffered": {
+                        "@type": "Service",
+                        "name": "Inbound and outbound investment vehicles for Australian capital"
+                }
+        }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+        {
+                "@type": "Question",
+                "name": "Is international structuring still legitimate under Pillar Two and modern tax law?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes \u2014 when done in reputable jurisdictions with real substance and genuine commercial purpose. What is no longer viable is brass-plate offshore, principal-purpose-test failures and synthetic IP migration. Modern international structuring is about credibility and substance, and used properly it remains a powerful tool for Australian businesses with cross-border operations or international investors."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "Which jurisdictions do you typically use?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It depends entirely on the purpose. Singapore is our default APAC trading hub. The UK and Netherlands serve well for European-facing IP and holding work. Ireland and Luxembourg appear for IP and fund structures. The UAE is increasingly viable for regional substance. We rule out jurisdictions with weak treaty networks, poor banking or reputational headwinds, regardless of headline tax."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "How much substance do I actually need?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enough that the structure works on the day of an audit or a sale. That means resident directors with real authority, board meetings held in jurisdiction with genuine agenda items, financial decisions taken locally, and operating presence proportionate to the activity. We scale substance to the size of the business \u2014 there is a meaningful difference between substance for a $5M IP-holding vehicle and a $300M operating subsidiary."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "Can an Australian family invest offshore through a structure?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes \u2014 and increasingly should, when international diversification matters. We design outbound investment vehicles that hold offshore equity, debt and property tax-efficiently, with clean reporting back to Australia, controlled foreign company compliance handled properly, and a defined repatriation path. The structure is openly disclosed and works within Australian tax rules."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "What if I want offshore IP for an Australian business?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It can be done \u2014 but only with genuine substance offshore, transfer-pricing-supported royalty flows, and acceptance that Australia's diverted profits and hybrid-mismatch rules apply. Most owners overestimate the tax benefit and underestimate the cost of substance. We model both honestly before recommending anything."
+                }
+        },
+        {
+                "@type": "Question",
+                "name": "Will Australian banks and partners accept an offshore structure?",
+                "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Reputable banks and partners accept reputable structures. Singapore, UK, Netherlands, Ireland and similar jurisdictions are well-recognised. Banking will require documentation \u2014 beneficial ownership, source-of-funds, substance \u2014 but it works. The structures that struggle are the ones that try to be invisible; we do not build those."
+                }
+        }
+]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="page-service" id="top">
+    <header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand" aria-label="Structure Me — Home">
+          <svg class="nav-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navOverlay" aria-expanded="false" type="button">
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="#top" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="family-office.html" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="insights.html" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="breadcrumbs-inner">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li><a href="index.html#international">Services</a></li>
+          <li aria-hidden="true" class="crumb-sep">/</li>
+          <li aria-current="page">International Business Structuring</li>
+        </ol>
+      </div>
+    </nav>
+
+    <section class="service-hero">
+      <div class="service-hero-inner">
+        <div class="service-hero-content">
+          <span class="section-eyebrow">— International Structuring · Reputable jurisdictions only</span>
+          <h1 class="service-hero-title">
+            Cross-border <em>structures</em><br />engineered for substance.
+          </h1>
+          <p class="service-hero-lede">
+            International structuring done well is unglamorous — it is reputable jurisdictions, real substance, treaty-aware flow of capital, and architecture that survives the next decade of regulation. We avoid the brittle shortcuts and design structures that withstand scrutiny by the ATO, your bank and your eventual acquirer.
+          </p>
+        </div>
+
+        <figure class="service-hero-figure" aria-hidden="true">
+          <div class="service-hero-image" style="background-image: url('img/service-intl-1-jurisdictions.jpg');"></div>
+          <figcaption class="service-hero-cap">
+            <span class="divider-rule"></span>
+            <span>Counsel · Capital · Structure</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-pillar">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 01 · Begin with the map</span>
+          <h2 class="section-title">
+            Jurisdiction <em>selection</em><br />on first principles.
+          </h2>
+          <p>There is no universally correct international jurisdiction — only the right one for a defined purpose. Singapore, Hong Kong, the UK, the Netherlands, Ireland, Luxembourg, the UAE and others each have a profile of treaty network, withholding rates, substance requirements and reputational standing. We choose deliberately.</p>
+
+          <div class="svc-pillar-two">
+            <div>
+              <h3>Drivers we evaluate</h3>
+              <ul>
+                <li>Australia tax treaty position and withholding rates.</li>
+                <li>Substance and economic-presence requirements.</li>
+                <li>Banking, audit and regulatory credibility.</li>
+                <li>Local talent, time-zone and operating reality.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Common landing zones</h3>
+              <ul>
+                <li>Singapore — APAC trading hub, treaty-rich.</li>
+                <li>United Kingdom — IP and holding company workhorse.</li>
+                <li>Netherlands / Ireland — IP and licensing royalty flows.</li>
+                <li>UAE — regional substance with sensible governance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-intl-1-jurisdictions.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-pillar svc-pillar--reverse svc-pillar--cream">
+      <div class="svc-pillar-inner">
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-intl-2-ip.jpg');"></div>
+        </figure>
+
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 02 · Where the value lives</span>
+          <h2 class="section-title">
+            Holding and <em>IP</em> structures<br />engineered for ownership.
+          </h2>
+          <p>For most modern businesses, the long-term value is in the IP — the brand, the platform, the algorithms, the customer data, the protocols. Where IP is owned, and how it is licensed downstream, dictates where the profit lands and how the eventual exit is taxed.</p>
+          <ul class="svc-pillar-list">
+            <li>International holding company above the operating businesses, in a credible jurisdiction.</li>
+            <li>IP-holding subsidiary with real substance — engineers, decision-makers, board.</li>
+            <li>Arms-length licensing of IP to operating subsidiaries with transfer-pricing support.</li>
+            <li>Royalty flows aligned to treaty network to limit withholding leakage.</li>
+            <li>Migration of legacy IP from Australian entities, with tax-efficient transition.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-pillar">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 03 · The rules of the network</span>
+          <h2 class="section-title">
+            Treaty and <em>tax alignment</em><br />that holds up under audit.
+          </h2>
+          <p>Treaty benefits are not automatic. They depend on residency, beneficial ownership, principal-purpose tests and substance. A poorly designed international structure may technically claim a treaty benefit and lose it in practice — when an audit or an acquirer's diligence team starts asking questions.</p>
+          <ul class="svc-pillar-list">
+            <li>Map the actual treaty network between source, intermediate and home jurisdictions.</li>
+            <li>Position entities so beneficial ownership and management are genuine, not nominal.</li>
+            <li>Avoid principal-purpose-test failures by tying structure to commercial logic.</li>
+            <li>Plan for CFC, hybrid mismatch and Pillar Two implications, not against them.</li>
+            <li>Document the rationale at the time of structuring — not retrospectively.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-intl-3-treaty.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-pillar svc-pillar--reverse svc-pillar--cream">
+      <div class="svc-pillar-inner">
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-intl-4-governance.jpg');"></div>
+        </figure>
+
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 04 · Real substance, real governance</span>
+          <h2 class="section-title">
+            Substance and <em>governance</em><br />that pass the smell test.
+          </h2>
+          <p>The era of brass-plate offshore is over. Reputable jurisdictions, banks and acquirers all expect to see real substance — directors who decide, premises where decisions are taken, board minutes that reflect real meetings, audited financials that stand up. We build the substance from day one.</p>
+          <ul class="svc-pillar-list">
+            <li>Resident directors with genuine authority — not nominees on a register.</li>
+            <li>Local premises, staff or service arrangements proportionate to the activity.</li>
+            <li>Board meetings held in jurisdiction, minuted properly, with real agenda items.</li>
+            <li>Audited financial statements, banking and compliance lifecycle managed locally.</li>
+            <li>Documented management-and-control evidence ready for any audit or diligence.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-pillar svc-pillar--dark">
+      <div class="svc-pillar-inner">
+        <div class="svc-pillar-content">
+          <span class="section-eyebrow">— 05 · Capital in both directions</span>
+          <h2 class="section-title">
+            Inbound and <em>outbound</em><br />investment vehicles.
+          </h2>
+          <p>Whether you are an Australian family investing offshore, an Australian operator with international customers, or an offshore family with Australian operations, the investment vehicle is what determines the tax, the privacy and the eventual liquidity of the position. The right vehicle is rarely the obvious one.</p>
+          <p>We design the holding architecture, the funding instrument and the repatriation path together — so capital can come in, be deployed, and come out again without unnecessary friction or tax leakage.</p>
+          <ul class="svc-pillar-list svc-pillar-list--dark">
+            <li>Outbound holding companies for Australian families investing in offshore equity, debt and property.</li>
+            <li>Inbound holding structures for non-resident capital entering Australian businesses and real estate.</li>
+            <li>Limited partnerships and corporate-limited partnerships for institutional-grade investment.</li>
+            <li>Co-investment SPVs aligned to club deals and family-office mandates.</li>
+            <li>Withholding-tax-efficient repatriation through dividends, royalties and capital returns.</li>
+            <li>Exit architecture so a future sale or recapitalisation is clean from day one.</li>
+          </ul>
+
+          <a href="contact.html" class="svc-link svc-link--dark">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <figure class="svc-pillar-figure" aria-hidden="true">
+          <div class="svc-pillar-image" style="background-image: url('img/service-intl-5-investment.jpg');"></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="svc-family">
+      <div class="svc-family-inner">
+        <span class="section-eyebrow">— 06 · A different international approach</span>
+        <h2 class="section-title">
+          Cross-border, <em>done with restraint</em>.
+        </h2>
+        <p class="svc-family-lede">
+          We do not promote aggressive offshore. We design structures Australian owners and family offices can use openly — with their bank, their accountant, the ATO and an eventual acquirer all comfortable in the room. That restraint is what makes the architecture durable.
+        </p>
+
+        <ul class="svc-family-list" role="list">
+          <li>
+            <span class="svc-family-num">i.</span>
+            <p>Stay inside reputable jurisdictions, even when others promise more.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">ii.</span>
+            <p>Build substance from day one — never as a defensive retrofit.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">iii.</span>
+            <p>Coordinate with international tax counsel in every relevant jurisdiction.</p>
+          </li>
+          <li>
+            <span class="svc-family-num">iv.</span>
+            <p>Design the exit before designing the entry.</p>
+          </li>
+        </ul>
+
+        <blockquote class="svc-family-quote">
+          &ldquo;The best international structures look boring on paper and quietly do their job for thirty years.&rdquo;
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="svc-thirds">
+      <div class="svc-thirds-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Why us</span>
+          <h2 class="section-title">
+            Three reasons<br /> private owners <em>retain us</em>.
+          </h2>
+        </div>
+
+        <div class="svc-thirds-grid">
+          <article class="svc-third">
+            <div class="svc-third-num">1 / 3</div>
+            <h3>Reputable jurisdictions only</h3>
+            <p>We work in jurisdictions that an Australian bank, the ATO and an institutional acquirer all recognise. That ruled-out list is as important as the ruled-in one — it is how we protect the long-term value of the business.</p>
+          </article>
+          <article class="svc-third">
+            <div class="svc-third-num">2 / 3</div>
+            <h3>Substance is the strategy</h3>
+            <p>Substance is not a compliance afterthought. It is the strategy. We design directors, governance and operating presence as deliberately as the entity itself, so the structure stands up to any audit or diligence process.</p>
+          </article>
+          <article class="svc-third">
+            <div class="svc-third-num">3 / 3</div>
+            <h3>Coordination, not silos</h3>
+            <p>International work touches three disciplines at once — Australian tax, foreign tax and foreign corporate law. We sit between them and translate, so nothing falls between the cracks where the cost of error is highest.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-faq" id="faq">
+      <div class="svc-faq-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Questions</span>
+          <h2 class="section-title">
+            What owners ask us<br /><em>before</em> they engage.
+          </h2>
+        </div>
+
+        <div class="svc-faq-list">
+          <details class="svc-faq-item" open>
+            <summary>
+              <span class="svc-faq-q">Is international structuring still legitimate under Pillar Two and modern tax law?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Yes — when done in reputable jurisdictions with real substance and genuine commercial purpose. What is no longer viable is brass-plate offshore, principal-purpose-test failures and synthetic IP migration. Modern international structuring is about credibility and substance, and used properly it remains a powerful tool for Australian businesses with cross-border operations or international investors.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">Which jurisdictions do you typically use?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>It depends entirely on the purpose. Singapore is our default APAC trading hub. The UK and Netherlands serve well for European-facing IP and holding work. Ireland and Luxembourg appear for IP and fund structures. The UAE is increasingly viable for regional substance. We rule out jurisdictions with weak treaty networks, poor banking or reputational headwinds, regardless of headline tax.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">How much substance do I actually need?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Enough that the structure works on the day of an audit or a sale. That means resident directors with real authority, board meetings held in jurisdiction with genuine agenda items, financial decisions taken locally, and operating presence proportionate to the activity. We scale substance to the size of the business — there is a meaningful difference between substance for a $5M IP-holding vehicle and a $300M operating subsidiary.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">Can an Australian family invest offshore through a structure?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Yes — and increasingly should, when international diversification matters. We design outbound investment vehicles that hold offshore equity, debt and property tax-efficiently, with clean reporting back to Australia, controlled foreign company compliance handled properly, and a defined repatriation path. The structure is openly disclosed and works within Australian tax rules.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">What if I want offshore IP for an Australian business?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>It can be done — but only with genuine substance offshore, transfer-pricing-supported royalty flows, and acceptance that Australia's diverted profits and hybrid-mismatch rules apply. Most owners overestimate the tax benefit and underestimate the cost of substance. We model both honestly before recommending anything.</p>
+            </div>
+          </details>
+          <details class="svc-faq-item">
+            <summary>
+              <span class="svc-faq-q">Will Australian banks and partners accept an offshore structure?</span>
+              <span class="svc-faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="svc-faq-a">
+              <p>Reputable banks and partners accept reputable structures. Singapore, UK, Netherlands, Ireland and similar jurisdictions are well-recognised. Banking will require documentation — beneficial ownership, source-of-funds, substance — but it works. The structures that struggle are the ones that try to be invisible; we do not build those.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="contact-image" aria-hidden="true">
+          <div class="contact-image-frame"></div>
+          <svg class="contact-orbit-overlay" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="#c8a24a" stroke-width="0.4" opacity="0.45">
+              <circle cx="200" cy="200" r="80" />
+              <circle cx="200" cy="200" r="140" />
+              <circle cx="200" cy="200" r="190" />
+            </g>
+            <g fill="#c8a24a">
+              <circle cx="200" cy="200" r="4" />
+              <circle cx="200" cy="60" r="2.5" opacity="0.7" />
+              <circle cx="340" cy="200" r="2.5" opacity="0.7" />
+              <circle cx="200" cy="340" r="2.5" opacity="0.7" />
+              <circle cx="60" cy="200" r="2.5" opacity="0.7" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="contact-content">
+          <span class="section-eyebrow">— Begin</span>
+          <h2 class="contact-title">
+            Most engagements begin with a <em>quiet conversation</em>.
+          </h2>
+          <p class="contact-lede">
+            Whether you are planning a capital raise, contemplating sale, or
+            simply re-thinking how the business is held — start with a
+            confidential introduction. There is no obligation, and no second
+            party in the room.
+          </p>
+
+          <div class="contact-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>Request an introduction</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-related">
+      <div class="svc-related-inner">
+        <div class="section-head">
+          <span class="section-eyebrow">— Continue</span>
+          <h2 class="section-title">
+            Related <em>disciplines</em>.
+          </h2>
+        </div>
+        <div class="svc-related-grid">
+          <a class="svc-related-card" href="advisory.html">
+            <span class="svc-related-num">01 / 05</span>
+            <h3>Business Advisory</h3>
+            <p>Structures, capital, grants and exit-readiness for owners up to AUD $300M.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+          <a class="svc-related-card" href="business-structuring.html">
+            <span class="svc-related-num">02 / 05</span>
+            <h3>Business Structuring</h3>
+            <p>Companies, trusts and hybrid structures for protection, capital and sale.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+          <a class="svc-related-card" href="family-office.html">
+            <span class="svc-related-num">04 / 05</span>
+            <h3>Family Office Structuring</h3>
+            <p>Holding vehicles, governance and succession for private wealth across generations.</p>
+            <span class="svc-related-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" />
+              <path d="M3 14 L18 14" />
+              <path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" />
+              <path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" />
+              <path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" />
+              <path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="advisory.html">Business advisory</a>
+            <a href="business-structuring.html">Business structuring</a>
+            <a href="international.html">International business structuring</a>
+            <a href="family-office.html">Family office structuring</a>
+            <a href="exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="about.html">About</a>
+            <a href="about.html#team">The team</a>
+            <a href="insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () {
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          toggle.classList.add('is-active');
+          toggle.setAttribute('aria-label', 'Close menu');
+          toggle.setAttribute('aria-expanded', 'true');
+          document.body.classList.add('nav-open');
+        };
+        var close = function () {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          toggle.classList.remove('is-active');
+          toggle.setAttribute('aria-label', 'Open menu');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        };
+        toggle.addEventListener('click', function () {
+          if (overlay.classList.contains('is-open')) close();
+          else open();
+        });
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function () {
+            setTimeout(close, 60);
+          });
+        }
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+        });
+      })();
+    </script>
+  </body>
+</html>

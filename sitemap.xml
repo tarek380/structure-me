@@ -48,12 +48,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- SITEMAP:ARTICLES:START -->
   <url>
     <loc>https://www.structureme.com.au/insights/trusts-companies-hybrids-business-structure</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- SITEMAP:ARTICLES:END -->
   <url>
     <loc>https://www.structureme.com.au/contact</loc>
     <lastmod>2026-05-25</lastmod>

@@ -1,0 +1,17 @@
+{
+  "name": "structure-me-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static site for Structure Me — Insights content sourced from Sanity at build time.",
+  "scripts": {
+    "build": "node scripts/build-insights.mjs",
+    "build:insights": "node scripts/build-insights.mjs",
+    "dev": "node scripts/build-insights.mjs && echo 'Build complete. Open any .html with a static file server.'"
+  },
+  "dependencies": {
+    "@portabletext/to-html": "^2.0.13",
+    "@sanity/client": "^6.22.0",
+    "@sanity/image-url": "^1.0.2"
+  }
+}

@@ -38,6 +38,62 @@ export default defineConfig({
                   .title('About Page')
               ),
 
+            // ── Service Pages — 5 pinned documents ───────────────────────
+            S.listItem()
+              .title('Service Pages')
+              .id('servicePages')
+              .child(
+                S.list()
+                  .title('Service Pages')
+                  .items([
+                    S.listItem()
+                      .title('Business Advisory')
+                      .id('servicePage.advisory')
+                      .child(
+                        S.document()
+                          .schemaType('servicePage')
+                          .documentId('servicePage.advisory')
+                          .title('Business Advisory')
+                      ),
+                    S.listItem()
+                      .title('Business Structuring')
+                      .id('servicePage.business-structuring')
+                      .child(
+                        S.document()
+                          .schemaType('servicePage')
+                          .documentId('servicePage.business-structuring')
+                          .title('Business Structuring')
+                      ),
+                    S.listItem()
+                      .title('International Structuring')
+                      .id('servicePage.international')
+                      .child(
+                        S.document()
+                          .schemaType('servicePage')
+                          .documentId('servicePage.international')
+                          .title('International Structuring')
+                      ),
+                    S.listItem()
+                      .title('Family Office Structuring')
+                      .id('servicePage.family-office')
+                      .child(
+                        S.document()
+                          .schemaType('servicePage')
+                          .documentId('servicePage.family-office')
+                          .title('Family Office Structuring')
+                      ),
+                    S.listItem()
+                      .title('Business Exit Strategy')
+                      .id('servicePage.exit-strategy')
+                      .child(
+                        S.document()
+                          .schemaType('servicePage')
+                          .documentId('servicePage.exit-strategy')
+                          .title('Business Exit Strategy')
+                      ),
+                  ])
+              ),
+
             S.divider(),
 
             // ── Insights ────────────────────────────────────────────────

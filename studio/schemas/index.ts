@@ -17,6 +17,12 @@ import teamMember from './objects/teamMember'
 import numberedListItem from './objects/numberedListItem'
 import relatedServiceCard from './objects/relatedServiceCard'
 
+// Service page schemas
+import servicePage from './servicePage'
+import servicePillar from './objects/servicePillar'
+import thirdsCard from './objects/thirdsCard'
+import faqItem from './objects/faqItem'
+
 export const schemaTypes = [
   // Existing
   insightsPost,
@@ -35,4 +41,9 @@ export const schemaTypes = [
   teamMember,
   numberedListItem,
   relatedServiceCard,
+  // Service page document + objects
+  servicePage,
+  servicePillar,
+  thirdsCard,
+  faqItem,
 ]

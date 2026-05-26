@@ -1679,16 +1679,20 @@ body.nav-open { overflow: hidden; }
 .approach-image {
   position: sticky;
   top: 6rem;
+  align-self: start;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  height: 100%;
+  /* Bound the sticky aside height so its frame can't grow past the cap. */
+  max-height: calc(100vh - 8rem);
 }
 .approach-image-frame {
   width: 100%;
   aspect-ratio: 3 / 4;
   flex: 1 1 auto;
-  min-height: 100%;
+  /* Cap height so the sticky image never dominates the viewport, even on
+     tall windows or when browser sidebars compress page width. */
+  max-height: min(78vh, 720px);
   background-image: url("img/approach-detail.jpg");
   background-size: cover;
   background-position: center;
@@ -1720,6 +1724,23 @@ body.nav-open { overflow: hidden; }
 .approach-main .approach-grid {
   max-width: none;
   padding: 0;
+}
+
+/* When the viewport is compressed (e.g. browser sidebars open) the
+   default 0.85fr / 1.15fr split makes the image dominate and the text
+   column too narrow. Rebalance between 1024px and 1280px. */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .approach-layout {
+    grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
+    gap: 3.5rem;
+  }
+  .approach-image {
+    max-height: calc(100vh - 10rem);
+  }
+  .approach-image-frame {
+    max-height: min(70vh, 560px);
+    aspect-ratio: 4 / 5;
+  }
 }
 
 /* ============================================================

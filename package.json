@@ -5,11 +5,15 @@
   "type": "module",
   "description": "Static site for Structure Me — Insights content sourced from Sanity at build time.",
   "scripts": {
-    "build": "npm run build:insights && npm run build:homepage && npm run build:about && npm run build:services && npm run build:studio",
+    "build": "npm run build:insights && npm run build:homepage && npm run build:about && npm run build:services && npm run build:contact && npm run build:insights-index && npm run build:subscribe-details && npm run build:thank-you-subscribe && npm run build:studio",
     "build:insights": "node scripts/build-insights.mjs",
     "build:homepage": "node scripts/build-homepage.mjs",
     "build:about": "node scripts/build-about.mjs",
     "build:services": "node scripts/build-services.mjs",
+    "build:contact": "node scripts/build-contact.mjs",
+    "build:insights-index": "node scripts/build-insights-index.mjs",
+    "build:subscribe-details": "node scripts/build-subscribe-details.mjs",
+    "build:thank-you-subscribe": "node scripts/build-thank-you-subscribe.mjs",
     "build:studio": "cd studio && npm ci --no-audit --no-fund && npx sanity build ../studio-app --yes && node ../scripts/patch-studio-paths.mjs",
     "clean:studio": "rm -rf studio-app",
     "dev": "node scripts/build-insights.mjs"

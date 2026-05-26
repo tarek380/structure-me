@@ -94,6 +94,47 @@ export default defineConfig({
                   ])
               ),
 
+            // ── Phase 4 singletons ───────────────────────────────────────
+            S.listItem()
+              .title('Contact Page')
+              .id('contactPage')
+              .child(
+                S.document()
+                  .schemaType('contactPage')
+                  .documentId('contactPage')
+                  .title('Contact Page')
+              ),
+
+            S.listItem()
+              .title('Insights Index Page')
+              .id('insightsIndexPage')
+              .child(
+                S.document()
+                  .schemaType('insightsIndexPage')
+                  .documentId('insightsIndexPage')
+                  .title('Insights Index Page')
+              ),
+
+            S.listItem()
+              .title('Subscribe Details Page')
+              .id('subscribeDetailsPage')
+              .child(
+                S.document()
+                  .schemaType('subscribeDetailsPage')
+                  .documentId('subscribeDetailsPage')
+                  .title('Subscribe Details Page')
+              ),
+
+            S.listItem()
+              .title('Thank You Subscribe Page')
+              .id('thankYouSubscribePage')
+              .child(
+                S.document()
+                  .schemaType('thankYouSubscribePage')
+                  .documentId('thankYouSubscribePage')
+                  .title('Thank You Subscribe Page')
+              ),
+
             S.divider(),
 
             // ── Insights ────────────────────────────────────────────────

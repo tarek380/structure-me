@@ -143,9 +143,12 @@ export default defineType({
         }),
         defineField({
           name: 'title',
-          title: 'Section title',
-          type: 'highlightedText',
-          description: 'Supports em/strong marks. Current: "Five disciplines, one architecture."',
+          title: 'Section title (raw HTML)',
+          type: 'text',
+          rows: 2,
+          description:
+            'Inline HTML string. Allowed tags: <em>, <strong>, <br />. ' +
+            'Example: "Five disciplines,<br /><em>one architecture</em>."',
           validation: (Rule) => Rule.required(),
         }),
         defineField({

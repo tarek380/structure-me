@@ -19,6 +19,7 @@ import { createClient } from '@sanity/client'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { resolveImage } from './lib/sanity-image.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -149,11 +150,12 @@ export function renderServicePage(originalHtml, doc, slug) {
   )
 
   // ── HERO: image URL (only if provided and template has inline style)
-  if (hero.heroImage) {
+  const heroImageUrl = resolveImage(hero.imageAsset, hero.heroImage)
+  if (heroImageUrl) {
     html = safeReplace(
       html,
       /(<div class="service-hero-image" style="background-image: url\(')[^']*('\);"><\/div>)/,
-      (pre, post) => `${pre}${hero.heroImage}${post}`
+      (pre, post) => `${pre}${heroImageUrl}${post}`
     )
   }
 
@@ -285,10 +287,11 @@ function renderPillarBlock(block, pillar, idx) {
   )
 
   // image URL
+  const pillarImageUrl = resolveImage(pillar.imageAsset, pillar.image)
   block = safeReplace(
     block,
     /(<div class="svc-pillar-image" style="background-image: url\(')[^']*('\);"><\/div>)/,
-    (pre, post) => `${pre}${pillar.image}${post}`
+    (pre, post) => `${pre}${pillarImageUrl}${post}`
   )
 
   return block

@@ -16,6 +16,7 @@ import { createClient } from '@sanity/client'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { resolveImage } from './lib/sanity-image.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -243,10 +244,11 @@ async function main() {
 
   // ── HERO: hero image ───────────────────────────────────────────
   // Original: <div class="service-hero-image" style="background-image: url('img/about-hero.jpg');"></div>
+  const heroImageUrl = resolveImage(hero.imageAsset, hero.heroImage)
   html = safeReplace(
     html,
     /(<div class="service-hero-image" style="background-image: url\(')[^']*('\);"><\/div>)/,
-    (pre, post) => `${pre}${hero.heroImage}${post}`
+    (pre, post) => `${pre}${heroImageUrl}${post}`
   )
 
   // ── HERO: figure caption ───────────────────────────────────────
@@ -337,16 +339,17 @@ async function main() {
 
   // ── TEAM: grid cards ──────────────────────────────────────────
   const teamCardsHtml = team.members
-    .map(
-      (m) => `\n          <a href="${m.href}" class="svc-team-card">
-            <div class="svc-team-image" style="background-image: url('${m.image}');" aria-hidden="true"></div>
+    .map((m) => {
+      const memberImageUrl = resolveImage(m.imageAsset, m.image)
+      return `\n          <a href="${m.href}" class="svc-team-card">
+            <div class="svc-team-image" style="background-image: url('${memberImageUrl}');" aria-hidden="true"></div>
             <div class="svc-team-role">${escapeHtml(m.role)}</div>
             <h3 class="svc-team-name">${escapeHtml(m.name)}</h3>
             <p class="svc-team-bio">
               ${escapeHtml(m.bio)}
             </p>
           </a>`
-    )
+    })
     .join('\n')
   html = safeReplace(
     html,

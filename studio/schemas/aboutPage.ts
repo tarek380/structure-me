@@ -320,7 +320,6 @@ export default defineType({
         }),
       ],
     }),
-  ],
 
     // ── SEO ──────────────────────────────────────────────────────────────────
     defineField({
@@ -354,7 +353,7 @@ export default defineType({
       group: 'seo',
       description: 'Social share image. 1200x630 recommended. Falls back to hero image.',
     }),
-
+    ],
   preview: {
     prepare() {
       return { title: 'About Page' }

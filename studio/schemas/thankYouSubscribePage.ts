@@ -75,34 +75,6 @@ export default defineType({
                 'Inline HTML allowed for inline links: <a class="thanks-link" href="…">…</a>',
               validation: (Rule) => Rule.required(),
             }),
-          ],
-          preview: {
-            select: { label: 'label', value: 'value' },
-            prepare({ label, value }) {
-              return { title: label, subtitle: value }
-            },
-          },
-        }),
-      ],
-      validation: (Rule) => Rule.required().min(1),
-    }),
-
-    defineField({
-      name: 'primaryCta',
-      title: 'Primary CTA',
-      type: 'cta',
-      description: 'e.g. "Read the latest insight" → "insights.html"',
-      validation: (Rule) => Rule.required(),
-    }),
-
-    defineField({
-      name: 'secondaryCta',
-      title: 'Secondary CTA',
-      type: 'cta',
-      description: 'e.g. "Return home" → "index.html"',
-      validation: (Rule) => Rule.required(),
-    }),
-  ],
 
     // ── SEO ──────────────────────────────────────────────────────────────────
     defineField({
@@ -136,7 +108,34 @@ export default defineType({
       group: 'seo',
       description: 'Social share image. 1200x630 recommended. Falls back to hero image.',
     }),
+            ],
+          preview: {
+            select: { label: 'label', value: 'value' },
+            prepare({ label, value }) {
+              return { title: label, subtitle: value }
+            },
+          },
+        }),
+      ],
+      validation: (Rule) => Rule.required().min(1),
+    }),
 
+    defineField({
+      name: 'primaryCta',
+      title: 'Primary CTA',
+      type: 'cta',
+      description: 'e.g. "Read the latest insight" → "insights.html"',
+      validation: (Rule) => Rule.required(),
+    }),
+
+    defineField({
+      name: 'secondaryCta',
+      title: 'Secondary CTA',
+      type: 'cta',
+      description: 'e.g. "Return home" → "index.html"',
+      validation: (Rule) => Rule.required(),
+    }),
+  ],
   preview: {
     prepare() {
       return { title: 'Thank You Subscribe Page' }

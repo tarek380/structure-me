@@ -23,6 +23,17 @@ const DATASET = process.env.SANITY_DATASET || 'production'
 const API_VERSION = '2024-01-01'
 const SITE_URL = 'https://www.structureme.com.au'
 
+// Default fallback images (already in repo) keyed to the filter slug.
+// Used when an insightsPost has no heroImage in Sanity yet.
+const DEFAULT_IMAGES = {
+  advisory: '/img/insights/1-advisory.jpg',
+  structuring: '/img/insights/2-structuring.jpg',
+  international: '/img/insights/3-international.jpg',
+  'family-office': '/img/insights/4-family-office.jpg',
+  exit: '/img/insights/5-exit.jpg',
+  default: '/img/insights/hero.jpg',
+}
+
 const client = createClient({
   projectId: PROJECT_ID,
   dataset: DATASET,
@@ -84,6 +95,17 @@ function escapeHtml(s) {
 // ------------------------------------------------------------------
 // HTML template — single article page (mirrors existing design exactly)
 // ------------------------------------------------------------------
+// Same mapping as the listing — kept inline so renderArticle stays self-contained.
+function articleCategoryToFilter(cat) {
+  if (!cat) return 'advisory'
+  const c = String(cat).toLowerCase()
+  if (c.includes('structur')) return 'structuring'
+  if (c.includes('international') || c.includes('cross-border')) return 'international'
+  if (c.includes('family')) return 'family-office'
+  if (c.includes('exit') || c.includes('sale') || c.includes('succession')) return 'exit'
+  return 'advisory'
+}
+
 function renderArticle(post) {
   const title = escapeHtml(post.title)
   const metaTitle = escapeHtml(post.metaTitle || `${post.title} | Structure Me`)
@@ -91,7 +113,10 @@ function renderArticle(post) {
   const metaKeywords = escapeHtml(post.metaKeywords || '')
   const slug = post.slug.current
   const canonical = `${SITE_URL}/insights/${slug}`
-  const heroImgUrl = post.heroImage ? urlFor(post.heroImage).width(1800).quality(82).url() : ''
+  const articleFallback = DEFAULT_IMAGES[articleCategoryToFilter(post.category)] || DEFAULT_IMAGES.default
+  const heroImgUrl = post.heroImage
+    ? urlFor(post.heroImage).width(1800).quality(82).url()
+    : `${SITE_URL}${articleFallback}`
   const heroAlt = escapeHtml(post.heroImage?.alt || post.title)
   const ogImgUrl = post.ogImage ? urlFor(post.ogImage).width(1200).height(630).url() : heroImgUrl
   const flag = escapeHtml(post.flag || (post.category ? `${post.category} · Working paper` : 'Working paper'))
@@ -259,14 +284,17 @@ async function rebuildListingPage(posts) {
   const cardsHtml = posts
     .map((p) => {
       const slug = p.slug.current
-      const img = p.heroImage ? urlFor(p.heroImage).width(900).quality(78).url() : ''
+      const filterSlugInner = categoryToFilter(p.category)
+      const img = p.heroImage
+        ? urlFor(p.heroImage).width(900).quality(78).url()
+        : (DEFAULT_IMAGES[filterSlugInner] || DEFAULT_IMAGES.default)
       const dateISO = new Date(p.publishedAt).toISOString().split('T')[0]
       const dateShort = new Date(p.publishedAt).toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: 'numeric' })
       const readingMin = p.readingMinutes ? ` · ${p.readingMinutes} min` : ''
-      const filterSlug = categoryToFilter(p.category)
+      const filterSlug = filterSlugInner
       const flagLabel = escapeHtml(p.category || 'Insights')
-      return `          <a class="insights-card" data-card data-category="${filterSlug}" data-date="${dateISO}"${img ? ` data-image="${img}"` : ''} href="insights/${slug}">
-            ${img ? `<div class="insights-card-image" style="background-image: url('${img}');" aria-hidden="true"></div>` : ''}
+      return `          <a class="insights-card" data-card data-category="${filterSlug}" data-date="${dateISO}" data-image="${img}" href="insights/${slug}">
+            <div class="insights-card-image" style="background-image: url('${img}');" aria-hidden="true"></div>
             <div class="insights-card-flag">— ${flagLabel}</div>
             <h3 class="insights-card-title">${escapeHtml(p.title)}</h3>
             ${p.dek ? `<p class="insights-card-dek">${escapeHtml(p.dek)}</p>` : ''}

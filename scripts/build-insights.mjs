@@ -213,8 +213,9 @@ function renderArticle(post) {
   const articleTags = tags.map((t) => `<meta property="article:tag" content="${escapeHtml(t)}" />`).join('\n    ')
   const takeaways = Array.isArray(post.takeaways) && post.takeaways.length
     ? `<section class="article-takeaways">
-        <h2 class="article-h2">Key takeaways</h2>
-        <ul class="article-list">${post.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>
+        <span class="article-takeaways-label">Key takeaways</span>
+        <h3>What to remember</h3>
+        <ul>${post.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>
       </section>`
     : ''
 
@@ -321,27 +322,129 @@ ${relatedSection}
 `
 }
 
-// Minimal header/footer — kept as functions so a future Sanity-driven nav is trivial.
+// Header — mirrors the markup used on every other page (insights.html, about.html, etc.)
+// so the global stylesheet's `.nav nav--on-light` rules apply.
 function renderHeader() {
-  return `<header class="site-header" data-article-header>
-      <a href="../" class="brand" aria-label="Structure Me home">
-        <span class="brand-mark">SM</span>
-        <span class="brand-name">Structure<em>Me</em></span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="../insights.html">Insights</a>
-        <a href="../about">About</a>
-        <a href="../contact.html" class="nav-cta">Begin a conversation</a>
-      </nav>
-    </header>`
+  return `<header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="../" class="nav-brand" aria-label="Structure Me — Home">
+          <svg class="nav-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" /><path d="M3 14 L18 14" /><path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" /><path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" /><path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" /><path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+        <div class="nav-actions">
+          <a href="../contact.html" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navOverlay" aria-expanded="false" type="button">
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="../advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="../business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="../international.html" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="../family-office.html" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="../exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="../about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="../insights.html" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="../contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>`
 }
 function renderFooter() {
-  // Pulled from existing site footer — full version lives in source pages.
-  return `<footer class="site-footer">
+  // Mirrors the structure of insights.html / about.html so styles apply.
+  return `<footer class="footer">
       <div class="footer-inner">
-        <p>© Structure Me · Level 4, 380 Collins Street, Melbourne VIC 3000 · <a href="mailto:tarek@structureme.com.au">tarek@structureme.com.au</a></p>
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" /><path d="M3 14 L18 14" /><path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" /><path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" /><path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" /><path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="../advisory.html">Business advisory</a>
+            <a href="../business-structuring.html">Business structuring</a>
+            <a href="../international.html">International business structuring</a>
+            <a href="../family-office.html">Family office structuring</a>
+            <a href="../exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="../about.html">About</a>
+            <a href="../about.html#team">The team</a>
+            <a href="../insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="../contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
       </div>
-    </footer>`
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+    <script>
+      // Mobile menu overlay toggle
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () { overlay.classList.add('is-open'); overlay.setAttribute('aria-hidden', 'false'); toggle.classList.add('is-active'); toggle.setAttribute('aria-expanded', 'true'); document.body.classList.add('nav-open'); };
+        var close = function () { overlay.classList.remove('is-open'); overlay.setAttribute('aria-hidden', 'true'); toggle.classList.remove('is-active'); toggle.setAttribute('aria-expanded', 'false'); document.body.classList.remove('nav-open'); };
+        toggle.addEventListener('click', function () { if (overlay.classList.contains('is-open')) close(); else open(); });
+        for (var i = 0; i < links.length; i++) { links[i].addEventListener('click', function () { setTimeout(close, 60); }); }
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) close(); });
+      })();
+    <\/script>`
 }
 
 // ------------------------------------------------------------------

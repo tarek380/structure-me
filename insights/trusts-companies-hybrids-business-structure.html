@@ -43,17 +43,59 @@
   </head>
   <body class="article-page">
     <a href="#main" class="skip-link">Skip to content</a>
-    <header class="site-header" data-article-header>
-      <a href="../" class="brand" aria-label="Structure Me home">
-        <span class="brand-mark">SM</span>
-        <span class="brand-name">Structure<em>Me</em></span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="../insights.html">Insights</a>
-        <a href="../about">About</a>
-        <a href="../contact.html" class="nav-cta">Begin a conversation</a>
-      </nav>
+    <header class="nav nav--on-light nav--service" id="nav">
+      <div class="nav-inner">
+        <a href="../" class="nav-brand" aria-label="Structure Me — Home">
+          <svg class="nav-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" /><path d="M3 14 L18 14" /><path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" /><path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" /><path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" /><path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <span class="nav-wordmark">
+            <span class="nav-wordmark-line">Structure</span>
+            <span class="nav-wordmark-line">Me</span>
+          </span>
+        </a>
+        <div class="nav-actions">
+          <a href="../contact.html" class="nav-cta">
+            <span>Begin a conversation</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="navOverlay" aria-expanded="false" type="button">
+            <span class="nav-toggle-label">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
     </header>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="nav-overlay-bg" aria-hidden="true"></div>
+      <div class="nav-overlay-inner">
+        <div class="nav-overlay-eyebrow">— Navigate</div>
+        <nav class="nav-overlay-menu" aria-label="Primary">
+          <a href="../advisory.html" data-overlay-link><span class="nav-overlay-num">01</span><span class="nav-overlay-label">Business Advisory</span></a>
+          <a href="../business-structuring.html" data-overlay-link><span class="nav-overlay-num">02</span><span class="nav-overlay-label">Business Structuring</span></a>
+          <a href="../international.html" data-overlay-link><span class="nav-overlay-num">03</span><span class="nav-overlay-label">International Business Structuring</span></a>
+          <a href="../family-office.html" data-overlay-link><span class="nav-overlay-num">04</span><span class="nav-overlay-label">Family Office Structuring</span></a>
+          <a href="../exit-strategy.html" data-overlay-link><span class="nav-overlay-num">05</span><span class="nav-overlay-label">Business Exit Strategy</span></a>
+          <a href="../about.html" data-overlay-link><span class="nav-overlay-num">06</span><span class="nav-overlay-label">About</span></a>
+          <a href="../insights.html" data-overlay-link><span class="nav-overlay-num">07</span><span class="nav-overlay-label">Insights</span></a>
+          <a href="../contact.html" data-overlay-link><span class="nav-overlay-num">08</span><span class="nav-overlay-label">Begin a conversation</span></a>
+        </nav>
+        <div class="nav-overlay-footer">
+          <div class="nav-overlay-social">
+            <a href="https://www.instagram.com/structureme" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/structureme" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h-2.5C9.6 4 8.5 5.1 8.5 7v2H6.5v3.5h2V20h3.5v-7.5h2.4l.6-3.5h-3V7.4c0-.6.3-.9 1-.9H14V4z"/></svg></a>
+            <a href="https://www.linkedin.com/company/structureme" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="7.5" cy="8" r="0.6" fill="currentColor" stroke="none"/><path d="M7 11v6"/><path d="M11 11v6"/><path d="M11 13.5c0-1.4 1.1-2.5 2.5-2.5S16 12.1 16 13.5V17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <main id="main">
       <article itemscope itemtype="https://schema.org/Article">
         <meta itemprop="datePublished" content="2026-05-11T23:00:00.000Z" />
@@ -81,8 +123,9 @@
           <div class="article-body-inner" itemprop="articleBody">
             <p>Most Australian founders we meet have already chosen the wrong structure. Not catastrophically — the business still runs, the tax still gets paid — but quietly, expensively, in ways that compound over a decade. The structure is wrong because it was chosen by their first accountant, in their first year, against a brief that no longer exists.</p><p>The choice is almost always between three architectures: a <strong>discretionary (family) trust</strong>, a <strong>proprietary limited company</strong>, or a <strong>hybrid</strong> — typically a company operating beneath a trust, or a unit trust held by a family trust. Each is right for something. None is right for everything. And the decision is harder, not easier, when the business is succeeding.</p><p>This working paper sets out the decision the way we walk clients through it: what each structure is good at, what each is bad at, and the practical signals that should tip you between them. It is written for founders preparing to grow, raise, or eventually sell — not for accountants, and not as advice.</p><h2>The decision in <em>one sentence</em>.</h2><p>Choose the structure that protects the business you have today and does not get in the way of the business you will sell tomorrow. That is the whole brief. Everything below is the unpacking of it.</p><blockquote class="article-pullquote">— A working definition</blockquote><blockquote class="article-pullquote">We use the phrase <strong>&quot;sell from&quot;</strong> deliberately. Most structures are chosen to operate from. Few are chosen to sell from. A good structure does both, and the trade-off between the two is usually smaller than founders fear.</blockquote><h2>1. The discretionary trust — flexibility, with a ceiling.</h2><p>A discretionary trust — what most Australians call a family trust — is the default structure for owner-operated businesses with one family behind them. It distributes profit at the trustee&#x27;s discretion, which means income can be allocated to whichever adult family member is in the lowest marginal bracket each year. That alone has paid for many holiday houses.</p><h3>Where it is right</h3><ul><li>Single-family ownership, no external capital.</li><li>Mature, cash-generating business — the discretion matters every year.</li><li>Owners with a spouse or adult children who can take legitimate distributions.</li><li>No serious intention to raise equity in the next five to seven years.</li></ul><h3>Where it quietly costs you</h3><ul><li>You cannot issue shares — so equity capital can&#x27;t come in cleanly.</li><li>Many buyers (and almost every private-equity buyer) prefer to acquire shares, not trust units or assets — a sale from a trust often becomes an asset sale, with worse tax outcomes for the vendor.</li><li>The structure carries reputational drag in institutional capital conversations — wholesale lenders read it as &quot;small business&quot;, whether or not that&#x27;s true.</li><li>The 80-year vesting rule still exists. It feels academic until it isn&#x27;t.</li></ul><p>A discretionary trust is the right answer for many of our clients — particularly those whose business is the family, not the franchise. It is the wrong answer the moment outside capital enters the conversation.</p><h2>2. The proprietary company — clean, scalable, taxed flat.</h2><p>A Pty Ltd company is the structure built for sale. Shares are transferable. Equity can be issued. Employee share schemes attach. The tax rate is flat, which is good news at scale and bad news at the bottom of an income tax table. The corporate veil offers real, if imperfect, protection.</p><h3>Where it is right</h3><ul><li>Anything intended to raise external equity, eventually.</li><li>Businesses with employees who will be granted options or shares.</li><li>Anything that may be acquired by an institutional buyer — fund, listed acquirer, foreign trade.</li><li>Scalable, repeatable revenue models — software, products, franchised services.</li></ul><h3>Where it quietly costs you</h3><ul><li>No distribution flexibility — dividends are paid in the proportions shares are held, full stop.</li><li>At smaller scales, the flat company rate is higher than personal marginal rates would have been.</li><li>Asset protection is real but narrower than a trust — directors of small companies are personally on the hook for a longer list of obligations than is comfortable.</li></ul><p>The proprietary company is the structure private equity will actually underwrite, the structure a foreign acquirer will understand without translation, and the structure that survives generational change at the cap-table level. It is also the structure that wastes money for the founder who never sells.</p><blockquote class="article-pullquote">&quot;The cost of a wrong structure is rarely the tax you pay — it is the deal you don&#x27;t get done. We have watched two excellent businesses fall out of acquisition because the buyer could not stomach the trust.&quot; — A senior adviser, Structure Me</blockquote><h2>3. The hybrid — the structure most founders <em>actually want</em>.</h2><p>The hybrid is rarely the first answer and almost always the right one for ambitious private businesses. The most common form is a <strong>company operating beneath a discretionary trust</strong> — the operating company holds the goodwill, the contracts and the employees; the trust holds the shares. Distributions from the company to the trust are then allocated with the discretion that trusts allow.</p><p>Variants exist. A unit trust beneath a discretionary trust gives you tradeable units instead of shares. A separate IP-holding entity sits above the operating company in licensing arrangements. A bucket company sits beside everything to receive franked dividends and pay tax at the flat corporate rate.</p><h3>Where the hybrid wins</h3><ul><li>You get most of the distribution flexibility of the trust.</li><li>You get the share-issuable, sale-ready architecture of the company.</li><li>You can ring-fence the operating risk inside the company while keeping the family&#x27;s assets outside it.</li><li>You retain the option to bring in external equity at the company level without redrafting the entire structure.</li></ul><h3>Where the hybrid is wrong</h3><ul><li>Cost. There are more entities. There are more annual returns. There is more administration.</li><li>Complexity in succession — multiple deeds, multiple trustees, multiple sets of advisers.</li><li>Some buyers, particularly retail or strategic acquirers, treat it as a complication and discount accordingly.</li></ul><p>For the majority of the businesses we work with, the hybrid is the architecture that gets built — usually in two stages. The operating business goes into a clean company structure first. The holding architecture above it is layered in as the business grows and the family&#x27;s wealth begins to need separating from the operating risk.</p><h2>The five questions we ask before we recommend.</h2><p>None of the above is recommendation; it is description. The recommendation, in any specific case, falls out of five questions. We ask them in this order, and the answers usually decide the structure before the structuring conversation has properly begun.</p><ol><li><strong>What does the cap table need to look like in seven years?</strong> If outside equity is involved, a company is in the structure somewhere.</li><li><strong>Who needs to be paid from the profits, and how?</strong> If multiple family members in different tax brackets need legitimate income, a trust is in the structure somewhere.</li><li><strong>What is the most likely exit?</strong> Asset sale, share sale, listing, or no sale at all — each implies a different architecture.</li><li><strong>How much operating risk does the business carry?</strong> The more litigation-prone the industry, the more aggressive the asset-protection layer.</li><li><strong>Where will the capital come from?</strong> Domestic family capital, wholesale lenders, private equity, foreign — each set of capital providers has structural preferences, and most have hard rules.</li></ol><blockquote class="article-pullquote">— A note on restructuring</blockquote><blockquote class="article-pullquote">If you are reading this and concluding you are in the wrong structure, the news is mostly good. Australia has a relatively forgiving restructure regime — particularly under the <em>small business restructure rollover</em> provisions and <em>Div 615 / Div 124-M</em> rollovers — and the right time to fix the structure is almost always now, before the next twelve months of growth makes the restructure more expensive.</blockquote><h2>What we do, in <em>one paragraph</em>.</h2><p>Structure Me sits between the accountant who built the original entity and the corporate lawyer who will be needed to redraft it. We map the business as it is, the business it will become, and the buyer it will most likely meet — and we design the architecture that survives all three. The work is unglamorous, the documents are dry, and the people behind it are operators, not theorists. For more on the practice, see our note on <a href="/business-structuring">business structuring</a> or our broader piece on <a href="/advisory">how we work as advisers</a>.</p>
             <section class="article-takeaways">
-        <h2 class="article-h2">Key takeaways</h2>
-        <ul class="article-list"><li>The structure you choose at year one is the structure your business will sell from at year ten. Choose accordingly.</li><li>Trusts win on distribution; companies win on sale; hybrids try to win on both — and usually do, at a cost.</li><li>The wrong structure rarely raises tax. It lowers price.</li><li>Most restructures, done early, cost less than one year of the wrong structure costs you.</li><li>Five questions decide it, and none of them is &quot;what does my accountant prefer.&quot;</li></ul>
+        <span class="article-takeaways-label">Key takeaways</span>
+        <h3>What to remember</h3>
+        <ul><li>The structure you choose at year one is the structure your business will sell from at year ten. Choose accordingly.</li><li>Trusts win on distribution; companies win on sale; hybrids try to win on both — and usually do, at a cost.</li><li>The wrong structure rarely raises tax. It lowers price.</li><li>Most restructures, done early, cost less than one year of the wrong structure costs you.</li><li>Five questions decide it, and none of them is &quot;what does my accountant prefer.&quot;</li></ul>
       </section>
           </div>
         </section>
@@ -101,11 +144,70 @@
       </div>
     </section>
     </main>
-    <footer class="site-footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <p>© Structure Me · Level 4, 380 Collins Street, Melbourne VIC 3000 · <a href="mailto:tarek@structureme.com.au">tarek@structureme.com.au</a></p>
+        <div class="footer-brand">
+          <svg class="footer-logo" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square">
+              <path d="M3 4 L18 4" /><path d="M3 14 L18 14" /><path d="M3 24 L18 24" />
+              <path d="M3 4 L3 14" opacity="0.55" /><path d="M18 14 L18 24" opacity="0.55" />
+              <path d="M24 24 L24 4" /><path d="M24 4 L31 14" />
+              <path d="M31 14 L37 4" opacity="0.85" /><path d="M37 4 L37 24" />
+            </g>
+          </svg>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Structure Me</span>
+            <span class="footer-brand-sub">Advisory · Business · International · Family Office · Exit</span>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="../advisory.html">Business advisory</a>
+            <a href="../business-structuring.html">Business structuring</a>
+            <a href="../international.html">International business structuring</a>
+            <a href="../family-office.html">Family office structuring</a>
+            <a href="../exit-strategy.html">Business exit strategy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Firm</h4>
+            <a href="../about.html">About</a>
+            <a href="../about.html#team">The team</a>
+            <a href="../insights.html">Insights</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <span class="footer-city">Melbourne</span>
+            <address class="footer-address">Level 4 / 380 Collins Street<br />Melbourne</address>
+            <a href="../contact.html" class="footer-getintouch">Get in touch</a></div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© 2026 Structure Me Pty Ltd</span>
+        <span class="footer-base-divider">·</span>
+        <span>Information only · Not legal or tax advice</span>
+        <span class="footer-base-spacer"></span>
+        <a href="#">Privacy</a>
+        <span class="footer-base-divider">·</span>
+        <a href="#">Terms</a>
       </div>
     </footer>
+    <script>
+      // Mobile menu overlay toggle
+      (function () {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('[data-overlay-link]');
+        var open = function () { overlay.classList.add('is-open'); overlay.setAttribute('aria-hidden', 'false'); toggle.classList.add('is-active'); toggle.setAttribute('aria-expanded', 'true'); document.body.classList.add('nav-open'); };
+        var close = function () { overlay.classList.remove('is-open'); overlay.setAttribute('aria-hidden', 'true'); toggle.classList.remove('is-active'); toggle.setAttribute('aria-expanded', 'false'); document.body.classList.remove('nav-open'); };
+        toggle.addEventListener('click', function () { if (overlay.classList.contains('is-open')) close(); else open(); });
+        for (var i = 0; i < links.length; i++) { links[i].addEventListener('click', function () { setTimeout(close, 60); }); }
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) close(); });
+      })();
+    </script>
     <script src="../js/subscribe-widget.js" defer></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
  */
 
 import { createClient } from '@sanity/client'
+import imageUrlBuilder from '@sanity/image-url'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -30,6 +31,11 @@ const client = createClient({
   useCdn: false,
   token: process.env.SANITY_READ_TOKEN || undefined,
 })
+
+const builder = imageUrlBuilder(client)
+function urlFor(source) {
+  return source ? builder.image(source) : null
+}
 
 function escapeHtml(s) {
   return String(s || '')
@@ -51,6 +57,122 @@ function safeReplace(html, regex, buildFn) {
     const groups = args.slice(1, -2)
     return buildFn(...groups)
   })
+}
+
+
+// ------------------------------------------------------------------
+// injectSeo — update <title>, <meta description>, <meta keywords>,
+// OG and Twitter tags from Sanity SEO fields (fail-soft: empty fields
+// leave existing HTML values unchanged).
+// ------------------------------------------------------------------
+function injectSeo(html, doc, fallbackOgImage) {
+  const title = doc.metaTitle || ''
+  const desc = doc.metaDescription || ''
+  const kw = doc.metaKeywords || ''
+  const ogImgUrl = doc.ogImage
+    ? urlFor(doc.ogImage).width(1200).height(630).quality(85).url()
+    : (fallbackOgImage || '')
+
+  // <title>
+  if (title) {
+    html = safeReplace(
+      html,
+      /(<title>)([\s\S]*?)(<\/title>)/,
+      (pre, _old, post) => `${pre}${escapeHtml(title)}${post}`
+    )
+  }
+
+  // <meta name="description" content="..."> — single-line
+  if (desc) {
+    html = safeReplace(
+      html,
+      /(<meta\s+name="description"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${escapeHtml(desc)}${post}`
+    )
+    // multi-line form: content on its own line
+    html = safeReplace(
+      html,
+      /(<meta\n\s+name="description"\n\s+content=")[^"]*("\n\s+\/>)/,
+      (pre, post) => `${pre}${escapeHtml(desc)}${post}`
+    )
+  }
+
+  // <meta name="keywords" content="...">
+  if (kw) {
+    html = safeReplace(
+      html,
+      /(<meta\s+name="keywords"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${escapeHtml(kw)}${post}`
+    )
+  }
+
+  // og:title
+  if (title) {
+    html = safeReplace(
+      html,
+      /(<meta\s+property="og:title"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${escapeHtml(title)}${post}`
+    )
+  }
+
+  // og:description — single-line
+  if (desc) {
+    html = safeReplace(
+      html,
+      /(<meta\s+property="og:description"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${escapeHtml(desc)}${post}`
+    )
+    // og:description multi-line
+    html = safeReplace(
+      html,
+      /(<meta\n\s+property="og:description"\n\s+content=")[^"]*("\n\s+\/>)/,
+      (pre, post) => `${pre}${escapeHtml(desc)}${post}`
+    )
+  }
+
+  // og:image
+  if (ogImgUrl) {
+    html = safeReplace(
+      html,
+      /(<meta\s+property="og:image"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${ogImgUrl}${post}`
+    )
+  }
+
+  // twitter:title
+  if (title) {
+    html = safeReplace(
+      html,
+      /(<meta\s+name="twitter:title"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${escapeHtml(title)}${post}`
+    )
+  }
+
+  // twitter:description — single-line
+  if (desc) {
+    html = safeReplace(
+      html,
+      /(<meta\s+name="twitter:description"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${escapeHtml(desc)}${post}`
+    )
+    // twitter:description multi-line
+    html = safeReplace(
+      html,
+      /(<meta\n\s+name="twitter:description"\n\s+content=")[^"]*("\n\s+\/>)/,
+      (pre, post) => `${pre}${escapeHtml(desc)}${post}`
+    )
+  }
+
+  // twitter:image
+  if (ogImgUrl) {
+    html = safeReplace(
+      html,
+      /(<meta\s+name="twitter:image"\s+content=")[^"]*("[^>]*\/?>)/,
+      (pre, post) => `${pre}${ogImgUrl}${post}`
+    )
+  }
+
+  return html
 }
 
 function requireField(value, fieldPath) {
@@ -136,6 +258,9 @@ export function renderContactPage(originalHtml, doc) {
     /(<p class="contact-form-aside-copy">)([\s\S]*?)(<\/p>)/,
     (pre, _old, post) => `${pre}\n            ${escapeHtml(formAside.copy)}\n          ${post}`
   )
+
+  // ── SEO injection ─────────────────────────────────────────────────
+  html = injectSeo(html, doc, 'https://www.structureme.com.au/img/contact-image.jpg')
 
   return html
 }

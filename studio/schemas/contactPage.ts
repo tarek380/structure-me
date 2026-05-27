@@ -12,6 +12,11 @@ export default defineType({
   type: 'document',
   __experimental_actions: ['update', 'publish'],
 
+  groups: [
+    { name: 'content', title: 'Content', default: true },
+    { name: 'seo', title: 'SEO & meta' },
+  ],
+
   fields: [
     defineField({
       name: 'hero',
@@ -87,6 +92,39 @@ export default defineType({
       ],
     }),
   ],
+
+    // ── SEO ──────────────────────────────────────────────────────────────────
+    defineField({
+      name: 'metaTitle',
+      title: 'Meta title (browser tab + SERP)',
+      type: 'string',
+      group: 'seo',
+      description: 'Defaults to page title if blank. Max 70 characters recommended.',
+      validation: (Rule) => Rule.max(70),
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'Meta description',
+      type: 'text',
+      rows: 3,
+      group: 'seo',
+      description: 'Shown in search results beneath the title. Max 200 characters.',
+      validation: (Rule) => Rule.max(200),
+    }),
+    defineField({
+      name: 'metaKeywords',
+      title: 'Meta keywords',
+      type: 'string',
+      group: 'seo',
+      description: 'Comma-separated keywords.',
+    }),
+    defineField({
+      name: 'ogImage',
+      title: 'Social-share image (OG image)',
+      type: 'image',
+      group: 'seo',
+      description: 'Social share image. 1200x630 recommended. Falls back to hero image.',
+    }),
 
   preview: {
     prepare() {

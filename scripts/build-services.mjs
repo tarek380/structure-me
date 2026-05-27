@@ -314,6 +314,9 @@ export function renderServicePage(originalHtml, doc, slug) {
   // ── CONTACT CTA
   html = renderContact(html, contactCta)
 
+  // ── RELATED INSIGHTS (Feature 3) — fail-soft if field not set
+  html = renderRelatedInsights(html, doc.relatedInsights || [])
+
   // ── RELATED SERVICES
   html = renderRelated(html, relatedServices)
 
@@ -590,6 +593,83 @@ function renderContact(html, contactCta) {
 }
 
 // ------------------------------------------------------------------
+// Default fallback images for insights cards (mirrors build-insights.mjs)
+// ------------------------------------------------------------------
+const DEFAULT_INSIGHT_IMAGES = {
+  advisory: '/img/insights/1-advisory.jpg',
+  structuring: '/img/insights/2-structuring.jpg',
+  international: '/img/insights/3-international.jpg',
+  'family-office': '/img/insights/4-family-office.jpg',
+  exit: '/img/insights/5-exit.jpg',
+  default: '/img/insights/hero.jpg',
+}
+
+function insightCategoryToFilter(cat) {
+  if (!cat) return 'advisory'
+  const c = String(cat).toLowerCase()
+  if (c.includes('structur')) return 'structuring'
+  if (c.includes('international') || c.includes('cross-border')) return 'international'
+  if (c.includes('family')) return 'family-office'
+  if (c.includes('exit') || c.includes('sale') || c.includes('succession')) return 'exit'
+  return 'advisory'
+}
+
+// ------------------------------------------------------------------
+// Feature 3: Related insights rendering
+// ------------------------------------------------------------------
+function renderRelatedInsights(html, relatedInsights) {
+  const startMarker = '<!-- INSIGHTS:RELATED:START -->'
+  const endMarker = '<!-- INSIGHTS:RELATED:END -->'
+
+  if (!html.includes(startMarker) || !html.includes(endMarker)) {
+    return html // markers not present — leave untouched
+  }
+
+  let sectionHtml = ''
+  if (relatedInsights && relatedInsights.length > 0) {
+    const cardsHtml = relatedInsights.map((p) => {
+      const slug = p.slug?.current || ''
+      const filterSlug = insightCategoryToFilter(p.category)
+      const img = p.heroImage
+        ? builder.image(p.heroImage).width(900).quality(78).url()
+        : (DEFAULT_INSIGHT_IMAGES[filterSlug] || DEFAULT_INSIGHT_IMAGES.default)
+      const dateShort = new Date(p.publishedAt).toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: 'numeric' })
+      const readingMin = p.readingMinutes ? ` · ${p.readingMinutes} min` : ''
+      const flagLabel = escapeHtml(p.category || 'Insights')
+      return `        <a class="insights-card" href="/insights/${slug}">
+          <div class="insights-card-image" style="background-image: url('${img}');" aria-hidden="true"></div>
+          <div class="insights-card-flag">— ${flagLabel}</div>
+          <h3 class="insights-card-title">${escapeHtml(p.title)}</h3>
+          <div class="insights-card-meta">${dateShort}${readingMin}</div>
+        </a>`
+    }).join('\n')
+
+    sectionHtml = `\n    <section class="svc-insights" aria-labelledby="svc-insights-h">
+      <div class="svc-insights-inner">
+        <header class="svc-insights-header">
+          <h2 id="svc-insights-h" class="section-title">Related insights</h2>
+        </header>
+        <div class="svc-insights-grid">
+${cardsHtml}
+        </div>
+      </div>
+    </section>\n`
+  }
+  // else: leave markers empty (no auto-fallback — user must pick in Studio)
+
+  html = safeReplace(
+    html,
+    new RegExp(`(${escapeMarker(startMarker)})[\\s\\S]*?(${escapeMarker(endMarker)})`),
+    (pre, post) => `${pre}${sectionHtml}${post}`
+  )
+  return html
+}
+
+function escapeMarker(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+// ------------------------------------------------------------------
 // Related services rendering
 // ------------------------------------------------------------------
 function renderRelated(html, relatedServices) {
@@ -637,7 +717,16 @@ async function main() {
 
     let doc
     try {
-      doc = await client.fetch(`*[_type == "servicePage" && _id == $id][0]`, { id: docId })
+      doc = await client.fetch(
+        `*[_type == "servicePage" && _id == $id][0]{
+          ...,
+          "relatedInsights": relatedInsights[]->{
+            _id, slug, title, category, publishedAt, readingMinutes, dek,
+            heroImage{..., asset->{_id, url}}
+          }
+        }`,
+        { id: docId }
+      )
     } catch (err) {
       console.warn(`    ⚠ Sanity fetch failed: ${err.message}`)
       console.warn(`    ⚠ Skipping ${slug}.html (leaving as-is).`)

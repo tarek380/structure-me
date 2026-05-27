@@ -107,6 +107,16 @@ export default {
       of: [{ type: 'string' }],
       group: 'content',
     },
+    {
+      name: 'relatedPosts',
+      title: 'Related articles',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'insightsPost' }] }],
+      validation: (R: any) => R.max(3),
+      description:
+        'Up to 3 related articles shown at the bottom of this post. If empty, the 3 most recent other posts are used as fallback.',
+      group: 'content',
+    },
 
     // --- HERO ---
     {

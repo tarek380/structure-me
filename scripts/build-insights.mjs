@@ -47,6 +47,34 @@ const builder = imageUrlBuilder(client)
 const urlFor = (src) => (src ? builder.image(src) : null)
 
 // ------------------------------------------------------------------
+// safeReplace — like String.replace(re, fn) but avoids $ backreference issues.
+// ------------------------------------------------------------------
+function safeReplace(html, regex, buildFn) {
+  return html.replace(regex, (...args) => {
+    const groups = args.slice(1, -2)
+    return buildFn(...groups)
+  })
+}
+
+// ------------------------------------------------------------------
+// Internal link resolver for Portable Text link marks
+// ------------------------------------------------------------------
+function resolveInternalRef(ref) {
+  if (!ref) return null
+  const type = ref._type
+  const slug = ref.slug
+  if (type === 'homePage') return '/'
+  if (type === 'aboutPage') return '/about'
+  if (type === 'contactPage') return '/contact'
+  if (type === 'insightsIndexPage') return '/insights'
+  if (type === 'subscribeDetailsPage') return '/subscribe-details'
+  if (type === 'thankYouSubscribePage') return '/thank-you-subscribe'
+  if (type === 'servicePage') return slug ? `/${slug}` : null
+  if (type === 'insightsPost') return slug ? `/insights/${slug}` : null
+  return null
+}
+
+// ------------------------------------------------------------------
 // Portable Text serializers — match the existing article visual treatments
 // ------------------------------------------------------------------
 const ptComponents = {
@@ -76,8 +104,26 @@ const ptComponents = {
   },
   marks: {
     link: ({ children, value }) => {
-      const target = value?.newWindow ? ' target="_blank" rel="noopener noreferrer"' : ''
-      return `<a href="${value.href}"${target}>${children}</a>`
+      // Feature 4: support internal page references and external URLs
+      let href = ''
+      let targetAttr = ''
+
+      if (value?.linkType === 'internal') {
+        // Resolve internal reference to a URL path
+        const resolved = resolveInternalRef(value?.internalRef)
+        href = resolved || '#'
+      } else {
+        // External URL (or legacy data with no linkType)
+        href = value?.href || '#'
+      }
+
+      // new-tab: honour openInNewTab (new field) or legacy newWindow field
+      const openNew = value?.openInNewTab || value?.newWindow
+      if (openNew) {
+        targetAttr = ' target="_blank" rel="noopener noreferrer"'
+      }
+
+      return `<a href="${href}"${targetAttr}>${children}</a>`
     },
     em: ({ children }) => `<em>${children}</em>`,
     strong: ({ children }) => `<strong>${children}</strong>`,
@@ -93,19 +139,55 @@ function escapeHtml(s) {
 }
 
 // ------------------------------------------------------------------
-// HTML template — single article page (mirrors existing design exactly)
+// Category → filter-slug mapping (shared between listing + article)
 // ------------------------------------------------------------------
-// Same mapping as the listing — kept inline so renderArticle stays self-contained.
-function articleCategoryToFilter(cat) {
+function categoryToFilter(cat) {
   if (!cat) return 'advisory'
   const c = String(cat).toLowerCase()
   if (c.includes('structur')) return 'structuring'
   if (c.includes('international') || c.includes('cross-border')) return 'international'
   if (c.includes('family')) return 'family-office'
   if (c.includes('exit') || c.includes('sale') || c.includes('succession')) return 'exit'
+  if (c.includes('advisory') || c.includes('capital') || c.includes('strategy')) return 'advisory'
   return 'advisory'
 }
 
+// ------------------------------------------------------------------
+// Feature 2: Render related-reading cards for an article page
+// ------------------------------------------------------------------
+function renderRelatedCards(relatedPosts) {
+  if (!relatedPosts || relatedPosts.length === 0) return ''
+
+  const cardsHtml = relatedPosts.map((p) => {
+    const slug = p.slug?.current || ''
+    const filterSlug = categoryToFilter(p.category)
+    const img = p.heroImage
+      ? urlFor(p.heroImage).width(900).quality(78).url()
+      : (DEFAULT_IMAGES[filterSlug] || DEFAULT_IMAGES.default)
+    const dateShort = new Date(p.publishedAt).toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: 'numeric' })
+    const readingMin = p.readingMinutes ? ` · ${p.readingMinutes} min` : ''
+    const flagLabel = escapeHtml(p.category || 'Insights')
+    return `      <a class="insights-card" href="../insights/${slug}">
+        <div class="insights-card-image" style="background-image: url('${img}');" aria-hidden="true"></div>
+        <div class="insights-card-flag">— ${flagLabel}</div>
+        <h3 class="insights-card-title">${escapeHtml(p.title)}</h3>
+        <div class="insights-card-meta">${dateShort}${readingMin}</div>
+      </a>`
+  }).join('\n')
+
+  return `    <section class="article-related" aria-labelledby="article-related-h">
+      <div class="article-related-inner">
+        <h2 id="article-related-h" class="article-related-title">Related Reading</h2>
+        <div class="article-related-grid">
+${cardsHtml}
+        </div>
+      </div>
+    </section>`
+}
+
+// ------------------------------------------------------------------
+// HTML template — single article page (mirrors existing design exactly)
+// ------------------------------------------------------------------
 function renderArticle(post) {
   const title = escapeHtml(post.title)
   const metaTitle = escapeHtml(post.metaTitle || `${post.title} | Structure Me`)
@@ -113,7 +195,7 @@ function renderArticle(post) {
   const metaKeywords = escapeHtml(post.metaKeywords || '')
   const slug = post.slug.current
   const canonical = `${SITE_URL}/insights/${slug}`
-  const articleFallback = DEFAULT_IMAGES[articleCategoryToFilter(post.category)] || DEFAULT_IMAGES.default
+  const articleFallback = DEFAULT_IMAGES[categoryToFilter(post.category)] || DEFAULT_IMAGES.default
   const heroImgUrl = post.heroImage
     ? urlFor(post.heroImage).width(1800).quality(82).url()
     : `${SITE_URL}${articleFallback}`
@@ -135,6 +217,9 @@ function renderArticle(post) {
         <ul class="article-list">${post.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>
       </section>`
     : ''
+
+  // Feature 2: related reading section
+  const relatedSection = renderRelatedCards(post.relatedPosts)
 
   // JSON-LD Article schema
   const jsonLd = {
@@ -227,6 +312,7 @@ function renderArticle(post) {
           </div>
         </section>
       </article>
+${relatedSection}
     </main>
     ${renderFooter()}
     <script src="../js/subscribe-widget.js" defer></script>
@@ -259,6 +345,85 @@ function renderFooter() {
 }
 
 // ------------------------------------------------------------------
+// Feature 1: Rebuild the hero card on insights.html
+// ------------------------------------------------------------------
+async function rebuildHeroCard(posts, heroPost) {
+  const listingPath = path.join(ROOT, 'insights.html')
+  const listingExists = await fs.access(listingPath).then(() => true).catch(() => false)
+  if (!listingExists) return
+
+  const html = await fs.readFile(listingPath, 'utf8')
+  const startMarker = '<!-- INSIGHTS:HERO:START -->'
+  const endMarker = '<!-- INSIGHTS:HERO:END -->'
+
+  if (!html.includes(startMarker) || !html.includes(endMarker)) {
+    console.log('  ℹ insights.html has no INSIGHTS:HERO markers — leaving hero untouched.')
+    return html
+  }
+
+  // Determine which post to feature: heroPost from Sanity if set, else newest post
+  let featured = null
+  if (heroPost && heroPost._id) {
+    featured = heroPost
+    console.log(`  ✓ Using heroPost from Sanity: "${featured.title}"`)
+  } else if (posts.length > 0) {
+    featured = posts[0] // already sorted publishedAt desc
+    console.log(`  ✓ No heroPost set — falling back to newest post: "${featured.title}"`)
+  }
+
+  if (!featured) {
+    console.log('  ℹ No posts available for hero — leaving hero untouched.')
+    return html
+  }
+
+  const slug = featured.slug?.current || ''
+  const filterSlug = categoryToFilter(featured.category)
+  const img = featured.heroImage
+    ? urlFor(featured.heroImage).width(1200).quality(82).url()
+    : (DEFAULT_IMAGES[filterSlug] || DEFAULT_IMAGES.default)
+  const dateISO = new Date(featured.publishedAt).toISOString().split('T')[0]
+  const dateReadable = new Date(featured.publishedAt).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })
+  const readingMin = featured.readingMinutes ? `${featured.readingMinutes} min read` : ''
+  const categoryLabel = featured.category || 'Insights'
+  const flagLabel = escapeHtml(`Featured · ${categoryLabel}`)
+  const dekHtml = featured.dek
+    ? `          <p class="insights-featured-dek">\n              ${escapeHtml(featured.dek)}\n            </p>`
+    : ''
+
+  const newCard = `
+        <a class="insights-featured-card" id="featuredCard" href="insights/${slug}" data-card data-category="${filterSlug}" data-date="${dateISO}" data-image="${img}">
+          <div class="insights-featured-content">
+            <span class="insights-featured-flag">— ${flagLabel}</span>
+            <h2 class="insights-featured-title">
+              ${escapeHtml(featured.title)}
+            </h2>
+${dekHtml}
+            <div class="insights-featured-meta">
+              <span>${dateReadable}</span>
+              ${readingMin ? `<span class="insights-featured-meta-sep" aria-hidden="true"></span>\n              <span>${readingMin}</span>` : ''}
+              <span class="insights-featured-meta-sep" aria-hidden="true"></span>
+              <span>Read piece →</span>
+            </div>
+          </div>
+          <div class="insights-featured-image" style="background-image: url('${img}');" aria-hidden="true"></div>
+        </a>`
+
+  const updated = safeReplace(
+    html,
+    new RegExp(`(${escapeRegex(startMarker)})[\\s\\S]*?(${escapeRegex(endMarker)})`),
+    (pre, post) => `${pre}\n${newCard}\n${post}`
+  )
+
+  await fs.writeFile(listingPath, updated)
+  console.log('  ✓ insights.html hero card refreshed')
+  return updated
+}
+
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+// ------------------------------------------------------------------
 // Listing page rebuild (insights.html grid)
 // ------------------------------------------------------------------
 async function rebuildListingPage(posts) {
@@ -268,18 +433,6 @@ async function rebuildListingPage(posts) {
     .then(() => true)
     .catch(() => false)
   if (!listingExists) return
-
-  // Map Sanity category labels to the data-category slugs used by the filter JS
-  const categoryToFilter = (cat) => {
-    if (!cat) return 'advisory'
-    const c = String(cat).toLowerCase()
-    if (c.includes('structur')) return 'structuring'
-    if (c.includes('international') || c.includes('cross-border')) return 'international'
-    if (c.includes('family')) return 'family-office'
-    if (c.includes('exit') || c.includes('sale') || c.includes('succession')) return 'exit'
-    if (c.includes('advisory') || c.includes('capital') || c.includes('strategy')) return 'advisory'
-    return 'advisory'
-  }
 
   const cardsHtml = posts
     .map((p) => {
@@ -291,9 +444,8 @@ async function rebuildListingPage(posts) {
       const dateISO = new Date(p.publishedAt).toISOString().split('T')[0]
       const dateShort = new Date(p.publishedAt).toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: 'numeric' })
       const readingMin = p.readingMinutes ? ` · ${p.readingMinutes} min` : ''
-      const filterSlug = filterSlugInner
       const flagLabel = escapeHtml(p.category || 'Insights')
-      return `          <a class="insights-card" data-card data-category="${filterSlug}" data-date="${dateISO}" data-image="${img}" href="insights/${slug}">
+      return `          <a class="insights-card" data-card data-category="${filterSlugInner}" data-date="${dateISO}" data-image="${img}" href="insights/${slug}">
             <div class="insights-card-image" style="background-image: url('${img}');" aria-hidden="true"></div>
             <div class="insights-card-flag">— ${flagLabel}</div>
             <h3 class="insights-card-title">${escapeHtml(p.title)}</h3>
@@ -308,9 +460,10 @@ async function rebuildListingPage(posts) {
   const start = '<!-- INSIGHTS:CARDS:START -->'
   const end = '<!-- INSIGHTS:CARDS:END -->'
   if (html.includes(start) && html.includes(end)) {
-    const next = html.replace(
-      new RegExp(`${start}[\\s\\S]*?${end}`),
-      `${start}\n${cardsHtml}\n${end}`
+    const next = safeReplace(
+      html,
+      new RegExp(`(${escapeRegex(start)})[\\s\\S]*?(${escapeRegex(end)})`),
+      (pre, post) => `${pre}\n${cardsHtml}\n        ${post}`
     )
     await fs.writeFile(listingPath, next)
     console.log('  ✓ insights.html cards section refreshed')
@@ -342,7 +495,11 @@ async function rebuildSitemap(posts) {
   const start = '<!-- SITEMAP:ARTICLES:START -->'
   const end = '<!-- SITEMAP:ARTICLES:END -->'
   if (current.includes(start) && current.includes(end)) {
-    const next = current.replace(new RegExp(`${start}[\\s\\S]*?${end}`), `${start}\n${articleEntries}\n  ${end}`)
+    const next = safeReplace(
+      current,
+      new RegExp(`(${escapeRegex(start)})[\\s\\S]*?(${escapeRegex(end)})`),
+      (pre, post) => `${pre}\n${articleEntries}\n  ${post}`
+    )
     await fs.writeFile(sitemapPath, next)
     console.log('  ✓ sitemap.xml articles refreshed')
   } else {
@@ -356,15 +513,31 @@ async function rebuildSitemap(posts) {
 async function main() {
   console.log(`▸ Sanity build — project=${PROJECT_ID} dataset=${DATASET}`)
 
+  // Fetch all published posts (with relatedPosts dereferenced)
   let posts = []
+  let indexPageDoc = null
   try {
     posts = await client.fetch(
       `*[_type == "insightsPost" && !(_id in path("drafts.**"))]|order(publishedAt desc){
         _id, title, slug, flag, dek, publishedAt, category, readingMinutes,
-        body, takeaways, metaTitle, metaDescription, metaKeywords, tags,
+        body[]{...,markDefs[]{...,internalRef->{_type,"slug":slug.current}}},
+        takeaways, metaTitle, metaDescription, metaKeywords, tags,
         heroImage{..., asset->{_id, url}},
         ogImage{..., asset->{_id, url}},
-        "author": author->{name, role}
+        "author": author->{name, role},
+        "relatedPosts": relatedPosts[]->{
+          _id, slug, title, category, publishedAt, readingMinutes, dek,
+          heroImage{..., asset->{_id, url}}
+        }
+      }`
+    )
+    // Fetch the insightsIndexPage for heroPost
+    indexPageDoc = await client.fetch(
+      `*[_type == "insightsIndexPage" && !(_id in path("drafts.**"))][0]{
+        heroPost->{
+          _id, slug, title, category, dek, publishedAt, readingMinutes,
+          heroImage{..., asset->{_id, url}}
+        }
       }`
     )
   } catch (err) {
@@ -386,6 +559,12 @@ async function main() {
       console.warn(`  ⚠ Skipping post "${post.title}" — missing slug.`)
       continue
     }
+
+    // Feature 2: if no relatedPosts set, fall back to 3 most recent other posts
+    if (!post.relatedPosts || post.relatedPosts.length === 0) {
+      post.relatedPosts = posts.filter((p) => p._id !== post._id).slice(0, 3)
+    }
+
     const outPath = path.join(INSIGHTS_DIR, `${post.slug.current}.html`)
     // Safety: only overwrite files that we previously generated (have the marker) or new slugs.
     const existed = await fs.access(outPath).then(() => true).catch(() => false)
@@ -401,6 +580,11 @@ async function main() {
     console.log(`  ✓ wrote ${path.relative(ROOT, outPath)}`)
   }
 
+  // Feature 1: rebuild hero card on insights.html
+  const heroPost = indexPageDoc?.heroPost || null
+  await rebuildHeroCard(posts, heroPost)
+
+  // Rebuild listing grid (cards)
   await rebuildListingPage(posts)
   await rebuildSitemap(posts)
 

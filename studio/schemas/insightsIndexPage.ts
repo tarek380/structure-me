@@ -18,6 +18,17 @@ export default defineType({
 
   fields: [
     defineField({
+      name: 'heroPost',
+      title: 'Featured (hero) article',
+      type: 'reference',
+      to: [{ type: 'insightsPost' }],
+      description:
+        'The post shown in the big "Featured" hero block at the top of the insights page. ' +
+        'If empty, falls back to the newest published post.',
+      group: 'content',
+    }),
+
+    defineField({
       name: 'newsletter',
       title: 'Newsletter section',
       type: 'object',

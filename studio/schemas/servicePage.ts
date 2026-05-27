@@ -242,6 +242,17 @@ export default defineType({
       ],
     }),
 
+    // ── RELATED INSIGHTS ─────────────────────────────────────────────────────
+    defineField({
+      name: 'relatedInsights',
+      title: 'Related insights articles',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'insightsPost' }] }],
+      validation: (Rule) => Rule.length(3).warning('Pick exactly 3 articles for the best layout'),
+      description: 'Three insight articles displayed on this service page.',
+      group: 'content',
+    }),
+
     // ── RELATED SERVICES ────────────────────────────────────────────────────
     defineField({
       name: 'relatedServices',

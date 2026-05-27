@@ -3738,3 +3738,64 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 720px) {
   .hero-scroll { display: none; }
 }
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Feature 2: Related Reading — article-page related articles grid             */
+/* ─────────────────────────────────────────────────────────────────────────── */
+.article-related {
+  background: var(--cream, #f4eee2);
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  border-top: 1px solid rgba(160, 127, 50, 0.18);
+}
+.article-related-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+.article-related-title {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin: 0 0 2.5rem;
+}
+.article-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(2rem, 3vw, 3rem) clamp(1.75rem, 2.5vw, 2.5rem);
+}
+@media (max-width: 900px) {
+  .article-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .article-related-grid { grid-template-columns: 1fr; }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Feature 3: Related Insights — service-page insights grid                    */
+/* ─────────────────────────────────────────────────────────────────────────── */
+.svc-insights {
+  background: var(--cream, #f4eee2);
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  border-top: 1px solid rgba(160, 127, 50, 0.18);
+}
+.svc-insights-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+.svc-insights-header {
+  margin-bottom: 2.5rem;
+}
+.svc-insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(2rem, 3vw, 3rem) clamp(1.75rem, 2.5vw, 2.5rem);
+}
+@media (max-width: 900px) {
+  .svc-insights-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .svc-insights-grid { grid-template-columns: 1fr; }
+}

@@ -51,7 +51,13 @@
   <!-- SITEMAP:ARTICLES:START -->
   <url>
     <loc>https://www.structureme.com.au/insights/trusts-companies-hybrids-business-structure</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.structureme.com.au/insights/test-article</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

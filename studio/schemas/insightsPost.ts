@@ -21,8 +21,29 @@ export default {
       title: 'Slug (URL)',
       type: 'slug',
       group: 'content',
-      options: { source: 'title', maxLength: 96 },
-      validation: (R: any) => R.required(),
+      description:
+        'URL path for this article. Auto-generated from the title (lowercase, hyphens). Click “Generate” after changing the title, or type your own — must be kebab-case (lowercase letters, numbers, hyphens only).',
+      options: {
+        source: 'title',
+        maxLength: 96,
+        slugify: (input: string) =>
+          String(input || '')
+            .toLowerCase()
+            .normalize('NFKD')
+            .replace(/[\u0300-\u036f]/g, '') // strip accents
+            .replace(/[^a-z0-9]+/g, '-') // non-alphanumeric → hyphen
+            .replace(/^-+|-+$/g, '') // trim leading/trailing hyphens
+            .slice(0, 96),
+      },
+      validation: (R: any) =>
+        R.required().custom((value: any) => {
+          const v = value?.current
+          if (!v) return 'Slug is required.'
+          if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(v)) {
+            return 'Slug must be kebab-case: lowercase letters, numbers and hyphens only (no spaces, no uppercase). Click “Generate” to auto-fix.'
+          }
+          return true
+        }),
     },
     {
       name: 'flag',

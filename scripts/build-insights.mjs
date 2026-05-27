@@ -244,25 +244,36 @@ async function rebuildListingPage(posts) {
     .catch(() => false)
   if (!listingExists) return
 
+  // Map Sanity category labels to the data-category slugs used by the filter JS
+  const categoryToFilter = (cat) => {
+    if (!cat) return 'advisory'
+    const c = String(cat).toLowerCase()
+    if (c.includes('structur')) return 'structuring'
+    if (c.includes('international') || c.includes('cross-border')) return 'international'
+    if (c.includes('family')) return 'family-office'
+    if (c.includes('exit') || c.includes('sale') || c.includes('succession')) return 'exit'
+    if (c.includes('advisory') || c.includes('capital') || c.includes('strategy')) return 'advisory'
+    return 'advisory'
+  }
+
   const cardsHtml = posts
     .map((p) => {
       const slug = p.slug.current
       const img = p.heroImage ? urlFor(p.heroImage).width(900).quality(78).url() : ''
-      const date = new Date(p.publishedAt).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })
-      return `
-        <article class="insight-card">
-          <a href="insights/${slug}" class="insight-card-link" aria-label="${escapeHtml(p.title)}">
-            ${img ? `<div class="insight-card-image" style="background-image:url('${img}')" role="img" aria-label="${escapeHtml(p.heroImage?.alt || p.title)}"></div>` : ''}
-            <div class="insight-card-body">
-              <span class="insight-card-flag">— ${escapeHtml(p.category || 'Insights')}</span>
-              <h3 class="insight-card-title">${escapeHtml(p.title)}</h3>
-              ${p.dek ? `<p class="insight-card-dek">${escapeHtml(p.dek)}</p>` : ''}
-              <time class="insight-card-date" datetime="${new Date(p.publishedAt).toISOString()}">${date}</time>
-            </div>
-          </a>
-        </article>`
+      const dateISO = new Date(p.publishedAt).toISOString().split('T')[0]
+      const dateShort = new Date(p.publishedAt).toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: 'numeric' })
+      const readingMin = p.readingMinutes ? ` · ${p.readingMinutes} min` : ''
+      const filterSlug = categoryToFilter(p.category)
+      const flagLabel = escapeHtml(p.category || 'Insights')
+      return `          <a class="insights-card" data-card data-category="${filterSlug}" data-date="${dateISO}"${img ? ` data-image="${img}"` : ''} href="insights/${slug}">
+            ${img ? `<div class="insights-card-image" style="background-image: url('${img}');" aria-hidden="true"></div>` : ''}
+            <div class="insights-card-flag">— ${flagLabel}</div>
+            <h3 class="insights-card-title">${escapeHtml(p.title)}</h3>
+            ${p.dek ? `<p class="insights-card-dek">${escapeHtml(p.dek)}</p>` : ''}
+            <div class="insights-card-meta">${dateShort}${readingMin}</div>
+          </a>`
     })
-    .join('\n')
+    .join('\n\n')
 
   const html = await fs.readFile(listingPath, 'utf8')
   // Replace content between markers if present

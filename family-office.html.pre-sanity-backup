@@ -582,83 +582,8 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-inner">
-        <div class="contact-image" aria-hidden="true">
-          <div class="contact-image-frame"></div>
-          <svg class="contact-orbit-overlay" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <g fill="none" stroke="#c8a24a" stroke-width="0.4" opacity="0.45">
-              <circle cx="200" cy="200" r="80" />
-              <circle cx="200" cy="200" r="140" />
-              <circle cx="200" cy="200" r="190" />
-            </g>
-            <g fill="#c8a24a">
-              <circle cx="200" cy="200" r="4" />
-              <circle cx="200" cy="60" r="2.5" opacity="0.7" />
-              <circle cx="340" cy="200" r="2.5" opacity="0.7" />
-              <circle cx="200" cy="340" r="2.5" opacity="0.7" />
-              <circle cx="60" cy="200" r="2.5" opacity="0.7" />
-            </g>
-          </svg>
-        </div>
-
-        <div class="contact-content">
-          <span class="section-eyebrow">— Begin</span>
-          <h2 class="contact-title">
-            Most engagements begin with a <em>quiet conversation</em>.
-          </h2>
-          <p class="contact-lede">
-            Whether you are planning a capital raise, contemplating sale, or
-            simply re-thinking how the business is held — start with a
-            confidential introduction. There is no obligation, and no second
-            party in the room.
-          </p>
-
-          <div class="contact-actions">
-            <a href="contact.html" class="btn btn-primary btn-lg">
-              <span>Request an introduction</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
 <!-- INSIGHTS:RELATED:START -->
 <!-- INSIGHTS:RELATED:END -->
-    <section class="svc-related">
-      <div class="svc-related-inner">
-        <div class="section-head">
-          <span class="section-eyebrow">— Continue</span>
-          <h2 class="section-title">
-            Related <em>disciplines</em>.
-          </h2>
-        </div>
-        <div class="svc-related-grid">
-          <a class="svc-related-card" href="advisory.html">
-            <span class="svc-related-num">01 / 05</span>
-            <h3>Business Advisory</h3>
-            <p>Structures, capital, grants and exit-readiness for owners up to AUD $300M.</p>
-            <span class="svc-related-arrow">→</span>
-          </a>
-          <a class="svc-related-card" href="business-structuring.html">
-            <span class="svc-related-num">02 / 05</span>
-            <h3>Business Structuring</h3>
-            <p>Companies, trusts and hybrid structures for protection, capital and sale.</p>
-            <span class="svc-related-arrow">→</span>
-          </a>
-          <a class="svc-related-card" href="international.html">
-            <span class="svc-related-num">03 / 05</span>
-            <h3>International Business Structuring</h3>
-            <p>Cross-border holding, IP and operating architecture across reputable jurisdictions.</p>
-            <span class="svc-related-arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <footer class="footer">
       <div class="footer-inner">
         <div class="footer-brand">

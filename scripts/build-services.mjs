@@ -311,14 +311,15 @@ export function renderServicePage(originalHtml, doc, slug) {
   // ── FAQ
   html = renderFaq(html, faq)
 
-  // ── CONTACT CTA
-  html = renderContact(html, contactCta)
+  // ── CONTACT CTA — section removed from templates (user request)
+  // html = renderContact(html, contactCta)
 
   // ── RELATED INSIGHTS (Feature 3) — fail-soft if field not set
   html = renderRelatedInsights(html, doc.relatedInsights || [])
 
-  // ── RELATED SERVICES
-  html = renderRelated(html, relatedServices)
+  // ── RELATED SERVICES — static section removed from templates (user request).
+  // Sanity-driven related insights above still render.
+  // html = renderRelated(html, relatedServices)
 
   return html
 }
